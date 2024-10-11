@@ -62,7 +62,7 @@ export default function Header16() {
               src="/assets/images/logo-wine.png"
               width={112}
               height={28}
-              alt="Uomo"
+              alt="Comfort-Cars"
               className="logo__image d-block"
             />
           </Link>

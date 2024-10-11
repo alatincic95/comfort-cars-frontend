@@ -143,7 +143,7 @@ export default function BlogDetails({ blog }) {
       </div>
       <div className="blog-single__item-share mw-930">
         <a
-          to="//www.facebook.com/sharer.php?u=https://uomo-crystal.myshopify.com/blogs/news/go-to-wellness-tips-for-mental-health"
+          to="//www.facebook.com/sharer.php?u=https://comfort-cars-crystal.myshopify.com/blogs/news/go-to-wellness-tips-for-mental-health"
           className="btn btn-share btn-facebook"
         >
           <svg
@@ -159,7 +159,7 @@ export default function BlogDetails({ blog }) {
           <span>Share on Facebook</span>
         </a>
         <a
-          to="//twitter.com/share?text=Go-to%20Wellness%20Tips%20for%20Mental%20Health&amp;url=https://uomo-crystal.myshopify.com/blogs/news/go-to-wellness-tips-for-mental-health"
+          to="//twitter.com/share?text=Go-to%20Wellness%20Tips%20for%20Mental%20Health&amp;url=https://comfort-cars-crystal.myshopify.com/blogs/news/go-to-wellness-tips-for-mental-health"
           className="btn btn-share btn-twitter"
         >
           <svg
@@ -175,7 +175,7 @@ export default function BlogDetails({ blog }) {
           <span>Share on Twitter</span>
         </a>
         <a
-          to="//pinterest.com/pin/create/button/?url=https://uomo-crystal.myshopify.com/blogs/news/go-to-wellness-tips-for-mental-health&amp;media=//uomo-crystal.myshopify.com/cdn/shop/articles/blog6.jpg?crop=center&amp;height=1024&amp;v=1650609391&amp;width=1024&amp;description=Go-to%20Wellness%20Tips%20for%20Mental%20Health"
+          to="//pinterest.com/pin/create/button/?url=https://comfort-cars-crystal.myshopify.com/blogs/news/go-to-wellness-tips-for-mental-health&amp;media=//comfort-cars-crystal.myshopify.com/cdn/shop/articles/blog6.jpg?crop=center&amp;height=1024&amp;v=1650609391&amp;width=1024&amp;description=Go-to%20Wellness%20Tips%20for%20Mental%20Health"
           className="btn btn-share btn-pinterest"
         >
           <svg

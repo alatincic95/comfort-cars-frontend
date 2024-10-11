@@ -97,7 +97,7 @@ export default function Footer18() {
               <Link to="/">
                 <img
                   src="/assets/images/logo-watches-footer.png"
-                  alt="Uomo"
+                  alt="Comfort-Cars"
                   width={112}
                   height={28}
                   className="logo__image d-block"
@@ -110,7 +110,7 @@ export default function Footer18() {
             </p>
 
             <p className="m-0">
-              <strong className="fw-normal fs-13">sale@uomo.com</strong>
+              <strong className="fw-normal fs-13">sale@comfort-cars.com</strong>
             </p>
             <p>
               <strong className="fw-normal fs-13">+1 246-345-0695</strong>
@@ -230,7 +230,7 @@ export default function Footer18() {
 
       <div className="footer-bottom container">
         <div className="d-block d-md-flex align-items-center">
-          <span className="footer-copyright me-auto fs-13">©2024 Uomo</span>
+          <span className="footer-copyright me-auto fs-13">©2024 Comfort-Cars</span>
           <div className="footer-settings d-block d-md-flex align-items-center">
             <div className="d-flex align-items-center">
               <label

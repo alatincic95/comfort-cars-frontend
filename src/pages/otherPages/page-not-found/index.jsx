@@ -5,8 +5,8 @@ import Notfound from "@/components/otherPages/Notfound";
 
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
-  title: "Page Not Found || Uomo eCommerce Reactjs Template",
-  description: "Uomo eCommerce Reactjs Template",
+  title: "Page Not Found || Comfort-Cars eCommerce Reactjs Template",
+  description: "Comfort-Cars eCommerce Reactjs Template",
 };
 export default function PageNotFound() {
   return (

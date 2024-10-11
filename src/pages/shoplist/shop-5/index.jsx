@@ -6,8 +6,8 @@ import Shop5 from "@/components/shoplist/Shop5";
 
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
-  title: "Shop 5 || Uomo eCommerce Reactjs Template",
-  description: "Uomo eCommerce Reactjs Template",
+  title: "Shop 5 || Comfort-Cars eCommerce Reactjs Template",
+  description: "Comfort-Cars eCommerce Reactjs Template",
 };
 export default function ShopPage5() {
   return (

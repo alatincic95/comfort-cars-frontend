@@ -6,8 +6,8 @@ import LocationMap from "@/components/otherPages/Contact/LocationMap";
 
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
-  title: "Contact || Uomo eCommerce Reactjs Template",
-  description: "Uomo eCommerce Reactjs Template",
+  title: "Contact || Comfort-Cars eCommerce Reactjs Template",
+  description: "Comfort-Cars eCommerce Reactjs Template",
 };
 export default function ContactPage() {
   return (

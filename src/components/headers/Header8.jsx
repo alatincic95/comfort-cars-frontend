@@ -55,7 +55,7 @@ export default function Header8() {
               src="/assets/images/logo-white.png"
               width={112}
               height={28}
-              alt="Uomo"
+              alt="Comfort-Cars"
               className="logo__image d-block"
             />
           </Link>

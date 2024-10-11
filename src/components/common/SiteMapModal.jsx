@@ -194,7 +194,7 @@ export default function SiteMapModal() {
                           role="presentation"
                         >
                           <a className="nav-link nav-link_rline" href="#">
-                            <span className="rline-content">#UOMOSTYLE</span>
+                            <span className="rline-content">#COMFORT CARSSTYLE</span>
                           </a>
                         </li>
                       </ul>

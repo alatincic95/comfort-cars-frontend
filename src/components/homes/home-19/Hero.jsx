@@ -49,7 +49,7 @@ export default function Hero() {
         <div className="pt-3 pb-3 pt-xl-5 pb-xl-5 mt-3 mt-xl-5"></div>
         <div className="pt-3 pb-3 pt-xl-5 pb-xl-5 mt-3 mt-xl-5"></div>
         <p className="text-uppercase fs-13 fw-normal text-center text-white">
-          UOMO WATCH VIDEO
+          COMFORT CARS WATCH VIDEO
         </p>
         <h2 className="text-uppercase h1 fw-semi-bold text-center text-white lh-1 mb-4">
           New Watches

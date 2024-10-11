@@ -1,7 +1,7 @@
 export default function Pagination1() {
   return (
     <div
-      className="progress progress_uomo mb-3 ms-auto me-auto"
+      className="progress progress_comfort-cars mb-3 ms-auto me-auto"
       style={{ width: "300px" }}
     >
       <div

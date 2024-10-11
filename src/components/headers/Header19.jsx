@@ -57,7 +57,7 @@ export default function Header19() {
                 src="/assets/images/logo-black.png"
                 width={112}
                 height={28}
-                alt="Uomo"
+                alt="Comfort-Cars"
                 className="logo__image d-block"
               />
             </Link>

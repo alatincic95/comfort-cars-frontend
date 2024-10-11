@@ -109,7 +109,7 @@ export default function SpecialOffers() {
                             <CountDownComponent2 />
                           </div>
                         </div>
-                        <div className="progress progress_uomo progress_uomo_small mb-2">
+                        <div className="progress progress_comfort-cars progress_comfort-cars_small mb-2">
                           <div
                             className="progress-bar theme-bg-color-secondary"
                             role="progressbar"

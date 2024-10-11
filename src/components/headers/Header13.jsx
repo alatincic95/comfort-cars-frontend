@@ -89,7 +89,7 @@ export default function Header13() {
                   src="/assets/images/logo-darkblue-yellow.png"
                   width={112}
                   height={28}
-                  alt="Uomo"
+                  alt="Comfort-Cars"
                   className="logo__image"
                 />
               </Link>

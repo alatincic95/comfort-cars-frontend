@@ -195,7 +195,7 @@ export default function SiteMap() {
                           role="presentation"
                         >
                           <a className="nav-link nav-link_rline" href="#">
-                            <span className="rline-content">#UOMOSTYLE</span>
+                            <span className="rline-content">#COMFORT CARSSTYLE</span>
                           </a>
                         </li>
                       </ul>

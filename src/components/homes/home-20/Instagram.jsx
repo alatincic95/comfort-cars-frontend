@@ -7,7 +7,7 @@ export default function Instagram() {
         <div className="col-lg-4 px-0 d-flex flex-column">
           <div className="instagram__tile flex-1 d-flex">
             <div className="d-flex flex-column justify-content-center text-white bg-black px-4 px-xl-5 py-3">
-              <h2 className="fs-35 fw-normal text-white mb-2">#uomostyle</h2>
+              <h2 className="fs-35 fw-normal text-white mb-2">#comfort-carsstyle</h2>
               <p className="mb-0">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Phasellus sed maecenas a, massa odio est pellentesque sodales.

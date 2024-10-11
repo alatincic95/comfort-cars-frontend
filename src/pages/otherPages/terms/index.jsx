@@ -5,8 +5,8 @@ import Terms from "@/components/otherPages/Terms";
 
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
-  title: "Terms || Uomo eCommerce Reactjs Template",
-  description: "Uomo eCommerce Reactjs Template",
+  title: "Terms || Comfort-Cars eCommerce Reactjs Template",
+  description: "Comfort-Cars eCommerce Reactjs Template",
 };
 export default function TermsPage() {
   return (

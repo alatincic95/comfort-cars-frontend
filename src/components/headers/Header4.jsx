@@ -128,7 +128,7 @@ export default function Header4() {
               src="/assets/images/logo.png"
               width={112}
               height={28}
-              alt="Uomo"
+              alt="Comfort-Cars"
               className="logo__image d-block"
             />
           </Link>

@@ -6,8 +6,8 @@ import DashboardSidebar from "@/components/otherPages/DashboardSidebar";
 
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
-  title: "Dashboard Account Wishlist || Uomo eCommerce Reactjs Template",
-  description: "Uomo eCommerce Reactjs Template",
+  title: "Dashboard Account Wishlist || Comfort-Cars eCommerce Reactjs Template",
+  description: "Comfort-Cars eCommerce Reactjs Template",
 };
 export default function AccountWishlistPage() {
   return (

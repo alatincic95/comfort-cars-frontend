@@ -6,8 +6,8 @@ import StoreLocator from "@/components/otherPages/StoreLocator";
 
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
-  title: "Store Location || Uomo eCommerce Reactjs Template",
-  description: "Uomo eCommerce Reactjs Template",
+  title: "Store Location || Comfort-Cars eCommerce Reactjs Template",
+  description: "Comfort-Cars eCommerce Reactjs Template",
 };
 export default function StoreLocationPage() {
   return (

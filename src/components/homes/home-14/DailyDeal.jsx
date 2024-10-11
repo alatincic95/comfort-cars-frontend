@@ -102,7 +102,7 @@ export default function DailyDeal() {
                 </div>
 
                 <div className="product-card__countdown">
-                  <div className="progress progress_uomo progress_uomo_medium mb-2">
+                  <div className="progress progress_comfort-cars progress_comfort-cars_medium mb-2">
                     <div
                       className="progress-bar theme-bg-color-secondary"
                       role="progressbar"

@@ -19,7 +19,7 @@ export default function VideoBanner() {
       <div className="h-100 d-flex flex-column justify-content-end position-relative py-3 py-xl-5">
         <div className="container">
           <h2 className="text-white fw-normal mb-3">
-            UOMO
+            COMFORT CARS
             <br />
             Studio Collection
           </h2>

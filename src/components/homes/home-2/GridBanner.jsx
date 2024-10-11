@@ -63,7 +63,7 @@ export default function GridBanner() {
               alt="image"
             />
             <div className="content_abs content_center text-center">
-              <p className="text-white mb-1">Free delivery for Uomo members</p>
+              <p className="text-white mb-1">Free delivery for Comfort-Cars members</p>
               <h3 className="text-uppercase fw-bold text-white mb-1">
                 Promotions Up
               </h3>

@@ -46,7 +46,7 @@ export default function Footer19() {
                   src="/assets/images/logo.png"
                   width={112}
                   height={28}
-                  alt="Uomo"
+                  alt="Comfort-Cars"
                   className="logo__image d-block"
                 />
               </Link>
@@ -57,7 +57,7 @@ export default function Footer19() {
             </p>
 
             <p className="m-0">
-              <strong className="fw-medium body-color">sale@uomo.com</strong>
+              <strong className="fw-medium body-color">sale@comfort-cars.com</strong>
             </p>
             <p>
               <strong className="fw-medium body-color">+1 246-345-0695</strong>
@@ -199,7 +199,7 @@ export default function Footer19() {
 
       <div className="footer-bottom font-heading body-color">
         <div className="container d-md-flex align-items-center">
-          <span className="footer-copyright me-auto">©2024 Uomo</span>
+          <span className="footer-copyright me-auto">©2024 Comfort-Cars</span>
           <div className="footer-settings d-md-flex align-items-center">
             <select
               id="footerSettingsLanguage"
