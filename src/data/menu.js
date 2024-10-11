@@ -1,4 +1,4 @@
-export const homePages = [{ id: 1, title: "Home 1", href: "/" }];
+export const homePages = [{ id: 1, title: "Home", href: "/" }];
 
 export const shopList = [
   {
