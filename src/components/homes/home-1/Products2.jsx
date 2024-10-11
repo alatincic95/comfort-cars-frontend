@@ -25,7 +25,7 @@ export default function Products2() {
   return (
     <section className="products-grid container">
       <h2 className="section-title text-uppercase text-center mb-1 mb-md-3 pb-xl-2 mb-xl-4">
-        Our Trendy <strong>Products</strong>
+        Ponuda <strong>Vozila</strong>
       </h2>
 
       <ul className="nav nav-tabs mb-3 text-uppercase justify-content-center">
@@ -137,7 +137,7 @@ export default function Products2() {
               className="btn-link btn-link_lg default-underline text-uppercase fw-medium"
               to="/shop-1"
             >
-              Discover More
+              Otkrijte više
             </Link>
           </div>
         </div>

@@ -49,14 +49,7 @@ export default function Hero() {
             </div>
             {/* <!-- <p className="slideshow_markup font-special text-uppercase position-absolute end-0 bottom-0">Summer</p> --> */}
             <div className="slideshow-character position-absolute bottom-0 pos_right-center">
-              <img
-                loading="lazy"
-                src={elm.characterImg}
-                width="400"
-                height="733"
-                alt="Woman Fashion 1"
-                className="slideshow-character__img animate animate_fade animate_btt animate_delay-9 h-auto w-auto"
-              />
+            
               <div className="character_markup">
                 <p className="text-uppercase font-sofia fw-bold animate animate_fade animate_rtl animate_delay-10">
                   {elm.characterText}
@@ -88,7 +81,7 @@ export default function Hero() {
                 to="/shop-1"
                 className="btn-link btn-link_lg default-underline text-uppercase fw-medium animate animate_fade animate_btt animate_delay-7"
               >
-                Discover More
+                Otkrijte više
               </Link>
             </div>
           </div>

@@ -1,6 +1,5 @@
 import {
   additionalShopPageitems,
-  blogmenuItems,
   homePages,
   othersMenuItems,
   shopDetails,
@@ -163,31 +162,6 @@ export default function Nav() {
           </div>
           {/* <!-- /.container d-flex --> */}
         </div>
-      </li>
-      <li className="navigation__item">
-        <a
-          href="#"
-          className={`navigation__link ${
-            isActiveParentMenu(blogmenuItems) ? "menu-active" : ""
-          }`}
-        >
-          Blog
-        </a>
-        <ul className="default-menu list-unstyled">
-          {blogmenuItems.map((elm, i) => (
-            <li key={i} className="sub-menu__item">
-              <Link
-                to={elm.href}
-                className={`menu-link menu-link_us-s ${
-                  isMenuActive(elm.href) ? "menu-active" : ""
-                }`}
-              >
-                {elm.title}
-              </Link>
-            </li>
-          ))}
-        </ul>
-        {/* <!-- /.box-menu --> */}
       </li>
       <li className="navigation__item">
         <a

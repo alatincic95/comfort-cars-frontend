@@ -68,7 +68,7 @@ export default function Banner4() {
                 href="#"
                 className="btn-link btn-link_lg text-uppercase fw-medium animate animate_fade animate_btt animate_delay-7"
               >
-                Discover More
+                Otkrijte više
               </a>
             </div>
           </div>

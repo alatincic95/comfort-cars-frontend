@@ -124,19 +124,7 @@ export default function Footer1() {
               />
             </form>
 
-            <div className="mt-4 pt-3">
-              <strong className="fw-medium">Secure payments</strong>
-              <p className="mt-2">
-                <img
-                  loading="lazy"
-                  width={324}
-                  height={38}
-                  src="/assets/images/payment-options.png"
-                  alt="Acceptable payment gateways"
-                  className="mw-100"
-                />
-              </p>
-            </div>
+           
           </div>
           {/* <!-- /.footer-column --> */}
         </div>
