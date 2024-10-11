@@ -17,6 +17,7 @@ export default function ProductDetailsPage13() {
   const productId = params.id;
   const product =
     allProducts.filter((elm) => elm.id == productId)[0] || allProducts[0];
+
   return (
     <>
       <MetaComponent meta={metadata} />

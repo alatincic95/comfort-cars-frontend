@@ -7,7 +7,6 @@ import Colors from "./Colors";
 import Description from "./Description";
 import AdditionalInfo from "./AdditionalInfo";
 import Reviews from "./Reviews";
-import { Link } from "react-router-dom";
 import ShareComponent from "../common/ShareComponent";
 import { useContextElement } from "@/context/Context";
 export default function SingleProduct8({ product }) {

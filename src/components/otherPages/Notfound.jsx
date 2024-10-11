@@ -6,16 +6,16 @@ export default function Notfound() {
     <section className="page-not-found">
       <div className="content container">
         <h2 className="mb-3">OOPS!</h2>
-        <h3 className="mb-3">Page not found</h3>
+        <h3 className="mb-3">Stranica nije pronađena</h3>
         <p className="mb-3">
-          Sorry, we couldn't find the page you where looking for. We suggest
-          that you return to home page.
+        Nažalost, nismo mogli pronaći stranicu koju ste tražili. Predlažemo
+          da se vratite na početnu stranicu.
         </p>
         <Link
           to={"/"}
           className="btn btn-primary d-flex align-items-center justify-content-center mx-auto"
         >
-          GO BACK
+          Natrag
         </Link>
       </div>
     </section>
