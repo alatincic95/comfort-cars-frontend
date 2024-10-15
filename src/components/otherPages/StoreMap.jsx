@@ -254,7 +254,7 @@ export default function StoreMap({
               <div>
                 <div className="google-map__marker-detail ">
                   <div className="google-map__marker-detail__content">
-                    <h5>Store in {getLocation.city}</h5>
+                    <h5>{getLocation.city}</h5>
                     <p>
                       {getLocation.address}
                       <br />

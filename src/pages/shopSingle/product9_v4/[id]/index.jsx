@@ -4,12 +4,12 @@ import Header24 from "@/components/headers/Header24";
 
 import RelatedSlider from "@/components/singleProduct/RelatedSlider";
 
-import SingleProduct4 from "@/components/singleProduct/SingleProduct4";
 
 import { allProducts } from "@/data/products";
 // e0e0e0;
 import MetaComponent from "@/components/common/MetaComponent";
 import { useParams } from "react-router-dom";
+import VehicleTestComponent from "../../../../components/singleProduct/VehicleTestComponent";
 const metadata = {
   title: "Shop Single 9 || Comfort-Cars eCommerce Reactjs Template",
   description: "Comfort-Cars eCommerce Reactjs Template",
@@ -25,9 +25,9 @@ export default function ProductDetailsPage9() {
       <div className="header_dark">
         <Header24 />
       </div>
-      <main>
-        {/* <div className="mb-md-1 pb-md-3"></div> */}
-        <SingleProduct4 product={product} />
+      <main className="page-wrapper">
+        <div className="mb-md-1 pb-md-3"></div>
+        <VehicleTestComponent product={product} />
         <RelatedSlider />
       </main>
       <Footer1 />

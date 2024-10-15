@@ -8,16 +8,99 @@ import "photoswipe/dist/photoswipe.css";
 import { Gallery, Item } from "react-photoswipe-gallery";
 const images = [
   {
-    imgSrc: "/assets/images/products/product_0.jpg",
+    imgSrc: "https://picsum.photos/700"
   },
   {
-    imgSrc: "/assets/images/products/product_0-1.jpg",
+    imgSrc: "https://picsum.photos/700"
   },
   {
-    imgSrc: "/assets/images/products/product_0-2.jpg",
+    imgSrc: "https://picsum.photos/700"
   },
   {
-    imgSrc: "/assets/images/products/product_0-3.jpg",
+    imgSrc: "https://picsum.photos/700"
+  },
+  {
+    imgSrc: "https://picsum.photos/700"
+  },
+  {
+    imgSrc: "https://picsum.photos/700"
+  },
+  {
+    imgSrc: "https://picsum.photos/700"
+  },
+  {
+    imgSrc: "https://picsum.photos/700"
+  },
+  {
+    imgSrc: "https://picsum.photos/700"
+  },
+  {
+    imgSrc: "https://picsum.photos/700"
+  },
+  {
+    imgSrc: "https://picsum.photos/700"
+  },
+  {
+    imgSrc: "https://picsum.photos/700"
+  },
+  {
+    imgSrc: "https://picsum.photos/700"
+  },  {
+    imgSrc: "https://picsum.photos/700"
+  },
+  {
+    imgSrc: "https://picsum.photos/700"
+  },
+  {
+    imgSrc: "https://picsum.photos/700"
+  },
+  {
+    imgSrc: "https://picsum.photos/700"
+  },
+  {
+    imgSrc: "https://picsum.photos/700"
+  },  {
+    imgSrc: "https://picsum.photos/700"
+  },
+  {
+    imgSrc: "https://picsum.photos/700"
+  },
+  {
+    imgSrc: "https://picsum.photos/700"
+  },
+  {
+    imgSrc: "https://picsum.photos/700"
+  },
+  {
+    imgSrc: "https://picsum.photos/700"
+  },  {
+    imgSrc: "https://picsum.photos/700"
+  },
+  {
+    imgSrc: "https://picsum.photos/700"
+  },
+  {
+    imgSrc: "https://picsum.photos/700"
+  },
+  {
+    imgSrc: "https://picsum.photos/700"
+  },
+  {
+    imgSrc: "https://picsum.photos/700"
+  },  {
+    imgSrc: "https://picsum.photos/700"
+  },
+  {
+    imgSrc: "https://picsum.photos/700"
+  },
+  {
+    imgSrc: "https://picsum.photos/700"
+  },
+  {
+    imgSrc: "https://picsum.photos/700"
+  },
+  {
+    imgSrc: "https://picsum.photos/700"
   },
 ];
 
@@ -46,7 +129,8 @@ export default function Slider4() {
             className="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events"
             style={{ maxWidth: "100%", overflow: "hidden" }}
           >
-            {images.map((elm, i) => (
+
+           {images.map((elm, i) => (
               <SwiperSlide
                 key={i}
                 className="swiper-slide product-single__image-item"
@@ -92,6 +176,7 @@ export default function Slider4() {
                 </Item>
               </SwiperSlide>
             ))}
+           
 
             <div className="cursor-pointer swiper-button-prev ssnbp1">
               <svg

@@ -134,7 +134,7 @@ export default function Products2() {
           {/* <!-- /.row --> */}
           <div className="text-center mt-2">
             <Link
-              className="btn-link btn-link_lg default-underline text-uppercase fw-medium"
+              className="btn-link m-4 btn-link_lg default-underline text-uppercase fw-medium"
               to="/shop-1"
             >
               Otkrijte više

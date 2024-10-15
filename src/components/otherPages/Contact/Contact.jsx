@@ -7,7 +7,7 @@ export default function Contact() {
         <div className="row mb-5">
           {storesLocations.slice(0, 2).map((elm, i) => (
             <div key={i} className="col-lg-6">
-              <h3 className="mb-4">Store in {elm.city}</h3>
+              <h3 className="mb-4">{elm.city}</h3>
               <p className="mb-4">
                 {elm.address}
                 <br />

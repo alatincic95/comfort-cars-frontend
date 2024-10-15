@@ -1,7 +1,6 @@
 import {
   additionalShopPageitems,
   homePages,
-  othersMenuItems,
   shopDetails,
   shopList,
 } from "@/data/menu";
@@ -72,7 +71,7 @@ export default function Nav() {
            ${isActiveParentMenu(additionalShopPageitems) ? "menu-active" : ""}
           `}
         >
-          Shop
+          Ponuda
         </a>
         <div className="mega-menu">
           <div className="container d-flex">
@@ -163,31 +162,7 @@ export default function Nav() {
           {/* <!-- /.container d-flex --> */}
         </div>
       </li>
-      <li className="navigation__item">
-        <a
-          href="#"
-          className={`navigation__link ${
-            isActiveParentMenu(othersMenuItems) ? "menu-active" : ""
-          }`}
-        >
-          Pages
-        </a>
-        <ul className="default-menu list-unstyled">
-          {othersMenuItems.map((elm, i) => (
-            <li key={i} className="sub-menu__item">
-              <Link
-                to={elm.href}
-                className={`menu-link menu-link_us-s ${
-                  isMenuActive(elm.href) ? "menu-active" : ""
-                }`}
-              >
-                {elm.title}
-              </Link>
-            </li>
-          ))}
-        </ul>
-        {/* <!-- /.box-menu --> */}
-      </li>
+  
       <li className="navigation__item">
         <Link
           to="/about"
@@ -195,7 +170,7 @@ export default function Nav() {
             pathname == "/about" ? "menu-active" : ""
           }`}
         >
-          About
+          O nama
         </Link>
       </li>
       <li className="navigation__item">
@@ -205,7 +180,7 @@ export default function Nav() {
             pathname == "/contact" ? "menu-active" : ""
           }`}
         >
-          Contact
+          Kontakt
         </Link>
       </li>
     </>

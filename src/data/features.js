@@ -8,14 +8,14 @@ export const servicePromotions = [
   {
     id: 2,
     icon: "#icon_headphone",
-    title: "24/7 Customer Support",
-    content: "Friendly 24/7 customer support",
+    title: "24/7 Dostupni za Vas",
+    content: "Kontaktirajte nas bilo kada i bilo gdje",
   },
   {
     id: 3,
     icon: "#icon_shield",
-    title: "Money Back Guarantee",
-    content: "We return money within 30 days",
+    title: "Sigurnost i povjerenje",
+    content: "Prodajemo samo najbolja vozila",
   },
 ];
 export const servicesData = [

@@ -1,16 +1,16 @@
 import { useState } from "react";
 import Slider4 from "./sliders/Slider4";
-import BreadCumb from "./BreadCumb";
-import Size from "./Size";
-import Colors from "./Colors";
-import Description from "./Description";
 import AdditionalInfo from "./AdditionalInfo";
 import Reviews from "./Reviews";
 import ShareComponent from "../common/ShareComponent";
 import { useContextElement } from "@/context/Context";
-export default function SingleProduct8({ product }) {
+import testVehicle from "../../data/test-data/testVehicle.json"
+import { PreviewItem } from "../test-components/PreviewItem";
+export default function VehicleTestComponent({ product }) {
   const { cartProducts, setCartProducts } = useContextElement();
   const [quantity, setQuantity] = useState(1);
+
+  console.log("Object.keys(testVehicle)",Object.keys(testVehicle))
 
   const isIncludeCard = () => {
     const item = cartProducts.filter((elm) => elm.id == product.id)[0];
@@ -45,38 +45,8 @@ export default function SingleProduct8({ product }) {
         </div>
         <div className="col-lg-5">
           <div className="d-flex justify-content-between mb-4 pb-md-2">
-            <div className="breadcrumb mb-0 d-none d-md-block flex-grow-1">
-              <BreadCumb />
-            </div>
-            {/* <!-- /.breadcrumb --> */}
+       
 
-            <div className="product-single__prev-next d-flex align-items-center justify-content-between justify-content-md-end flex-grow-1">
-              <a className="text-uppercase fw-medium">
-                <svg
-                  className="mb-1px"
-                  width="10"
-                  height="10"
-                  viewBox="0 0 25 25"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <use href="#icon_prev_md" />
-                </svg>
-                <span className="menu-link menu-link_us-s">Prev</span>
-              </a>
-              <a className="text-uppercase fw-medium">
-                <span className="menu-link menu-link_us-s">Next</span>
-                <svg
-                  className="mb-1px"
-                  width="10"
-                  height="10"
-                  viewBox="0 0 25 25"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <use href="#icon_next_md" />
-                </svg>
-              </a>
-            </div>
-            {/* <!-- /.shop-acs --> */}
           </div>
           <h1 className="product-single__name">{product.title}</h1>
           <div className="product-single__rating">
@@ -86,37 +56,13 @@ export default function SingleProduct8({ product }) {
           <div className="product-single__price">
             <span className="current-price">${product.price}</span>
           </div>
-          <div className="product-single__short-desc">
-            <p>
-              Phasellus sed volutpat orci. Fusce eget lore mauris vehicula
-              elementum gravida nec dui. Aenean aliquam varius ipsum, non
-              ultricies tellus sodales eu. Donec dignissim viverra nunc, ut
-              aliquet magna posuere eget.
-            </p>
-          </div>
+          {Object.keys(testVehicle).map((key, i) => {
+            if(key !== "opis" && key!== "fotografije"){
+             return <PreviewItem key={i} title={key} description={testVehicle[key]}/>
+            }
+          })}
           <form onSubmit={(e) => e.preventDefault()}>
-            <div className="product-single__swatches">
-              <div className="product-swatch text-swatches">
-                <label>Sizes</label>
-                <div className="swatch-list">
-                  <Size />
-                </div>
-                <a
-                  href="#"
-                  className="sizeguide-link"
-                  data-bs-toggle="modal"
-                  data-bs-target="#sizeGuide"
-                >
-                  Size Guide
-                </a>
-              </div>
-              <div className="product-swatch color-swatches">
-                <label>Color</label>
-                <div className="swatch-list">
-                  <Colors />
-                </div>
-              </div>
-            </div>
+      
             <div className="product-single__addtocart">
               <div className="qty-control position-relative">
                 <input
@@ -177,24 +123,10 @@ export default function SingleProduct8({ product }) {
             </a>
             <ShareComponent title={product.title} />
           </div>
-          <div className="product-single__meta-info">
-            <div className="meta-item">
-              <label>SKU:</label>
-              <span>N/A</span>
-            </div>
-            <div className="meta-item">
-              <label>Categories:</label>
-              <span>Casual & Urban Wear, Jackets, Men</span>
-            </div>
-            <div className="meta-item">
-              <label>Tags:</label>
-              <span>biker, black, bomber, leather</span>
-            </div>
-          </div>
         </div>
       </div>
-      <div className="product-single__details-tab">
-        <ul className="nav nav-tabs" id="myTab" role="tablist">
+      <div className="product-single__details-tab m-0">
+        <ul className="nav nav-tabs d-flex justify-content-start" id="myTab" role="tablist">
           <li className="nav-item" role="presentation">
             <a
               className="nav-link nav-link_underscore active"
@@ -205,35 +137,10 @@ export default function SingleProduct8({ product }) {
               aria-controls="tab-description"
               aria-selected="true"
             >
-              Description
+              Opis
             </a>
           </li>
-          <li className="nav-item" role="presentation">
-            <a
-              className="nav-link nav-link_underscore"
-              id="tab-additional-info-tab"
-              data-bs-toggle="tab"
-              href="#tab-additional-info"
-              role="tab"
-              aria-controls="tab-additional-info"
-              aria-selected="false"
-            >
-              Additional Information
-            </a>
-          </li>
-          <li className="nav-item" role="presentation">
-            <a
-              className="nav-link nav-link_underscore"
-              id="tab-reviews-tab"
-              data-bs-toggle="tab"
-              href="#tab-reviews"
-              role="tab"
-              aria-controls="tab-reviews"
-              aria-selected="false"
-            >
-              Reviews (2)
-            </a>
-          </li>
+       
         </ul>
         <div className="tab-content">
           <div
@@ -242,7 +149,21 @@ export default function SingleProduct8({ product }) {
             role="tabpanel"
             aria-labelledby="tab-description-tab"
           >
-            <Description />
+                <div className="product-single__description">
+     
+      <p className="content">
+      <p className="content">
+  {testVehicle.opis.split('\n').map((line, index) => (
+    <div key={index}>
+      {line}
+      <br />
+    </div>
+  ))}
+</p>
+
+      </p>
+     
+    </div>
           </div>
           <div
             className="tab-pane fade"

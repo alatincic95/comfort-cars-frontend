@@ -1,4 +1,4 @@
-export const homePages = [{ id: 1, title: "Home", href: "/" }];
+export const homePages = [{ id: 1, title: "NASLOVNICA", href: "/" }];
 
 export const shopList = [
   {
@@ -63,36 +63,6 @@ export const blogmenuItems = [
 ];
 
 export const othersMenuItems = [
-  {
-    id: 1,
-    href: "/account_dashboard",
-    title: "My Account",
-  },
-  {
-    id: 2,
-    href: "/login_register",
-    title: "Login / Register",
-  },
-  {
-    id: 3,
-    href: "/store_location",
-    title: "Store Locator",
-  },
-  {
-    id: 4,
-    href: "/lookbook",
-    title: "Lookbook",
-  },
-  {
-    id: 5,
-    href: "/faq",
-    title: "Faq",
-  },
-  {
-    id: 6,
-    href: "/terms",
-    title: "Terms",
-  },
   {
     id: 7,
     href: "/page-not-found",

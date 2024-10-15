@@ -28,7 +28,7 @@ export default function Footer1() {
             </div>
             {/* <!-- /.logo --> */}
             <p className="footer-address">
-              1418 River Drive, Suite 35 Cottonhall, CA 9622 United States
+              Kaštel Sućurac
             </p>
 
             <p className="m-0">
@@ -138,55 +138,9 @@ export default function Footer1() {
             ©{new Date().getFullYear()} Comfort-Cars
           </span>
           <div className="footer-settings d-block d-md-flex align-items-center">
-            <div className="d-flex align-items-center">
-              <label
-                htmlFor="footerSettingsLanguage"
-                className="me-2 text-secondary"
-              >
-                Language
-              </label>
-              <select
-                id="footerSettingsLanguage"
-                className="form-select form-select-sm bg-transparent"
-                aria-label="Default select example"
-                name="store-language"
-              >
-                {languageOptions.map((option, index) => (
-                  <option
-                    key={index}
-                    className="footer-select__option"
-                    value={option.value}
-                  >
-                    {option.text}
-                  </option>
-                ))}
-              </select>
-            </div>
+  
 
-            <div className="d-flex align-items-center">
-              <label
-                htmlFor="footerSettingsCurrency"
-                className="ms-md-3 me-2 text-secondary"
-              >
-                Currency
-              </label>
-              <select
-                id="footerSettingsCurrency"
-                className="form-select form-select-sm bg-transparent"
-                aria-label="Default select example"
-                name="store-language"
-              >
-                {currencyOptions.map((option, index) => (
-                  <option
-                    key={index}
-                    className="footer-select__option"
-                    value={option.value}
-                  >
-                    {option.text}
-                  </option>
-                ))}
-              </select>
-            </div>
+        
           </div>
           {/* <!-- /.footer-settings --> */}
         </div>

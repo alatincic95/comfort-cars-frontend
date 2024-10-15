@@ -38,7 +38,7 @@ export default function StoreLocator() {
             <div className="store-location__search-result">
               {storesLocations.map((elm, i) => (
                 <div key={i} className="store-location__search-result__item">
-                  <h5>Store in {elm.city}</h5>
+                  <h5>{elm.city}</h5>
                   <p>
                     {elm.address}
                     <br />
