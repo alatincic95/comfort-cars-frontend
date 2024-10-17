@@ -1,8 +1,9 @@
 {
+  "title": "Peugeot 3008 1.5 blue HDI",
   "marka": "Peugeot",
   "model": "3008",
   "zapremina": "1.5",
-  "cijena": "20000",
+  "price": "20000",
   "godinaProizvodnje": "2020",
   "kilometraža": "20000",
   "vrstaMotora": "benziski",

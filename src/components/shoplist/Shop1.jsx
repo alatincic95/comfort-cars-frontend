@@ -20,7 +20,7 @@ export default function Shop1() {
   const [selectedColView, setSelectedColView] = useState(4);
 
   const { addProductToCart, isAddedToCartProducts } = useContextElement();
-  const [currentCategory, setCurrentCategory] = useState(menuCategories[0]);
+  const [currentCategory] = useState(menuCategories[0]);
 
   // eslint-disable-next-line no-unused-vars
   const [filtered, setFiltered] = useState(products51);
@@ -36,51 +36,6 @@ export default function Shop1() {
 
   return (
     <>
-      <section className="full-width_padding">
-        <div
-          className="full-width_border border-2"
-          style={{ borderColor: "#eeeeee" }}
-        >
-          <div className="shop-banner position-relative">
-            <div
-              className="background-img"
-              style={{ backgroundColor: "#eeeeee" }}
-            >
-              <img
-                loading="lazy"
-                src="/assets/images/shop/shop_banner_character1.png"
-                width="1759"
-                height="420"
-                alt="Pattern"
-                className="slideshow-bg__img object-fit-cover"
-              />
-            </div>
-
-            <div className="shop-banner__content container position-absolute start-50 top-50 translate-middle">
-              <h2 className="stroke-text h1 smooth-16 text-uppercase fw-bold mb-3 mb-xl-4 mb-xl-5">
-                Jackets & Coats
-              </h2>
-              <ul className="d-flex flex-wrap list-unstyled text-uppercase h6">
-                {menuCategories.map((elm, i) => (
-                  <li key={i} className="me-3 me-xl-4 pe-1">
-                    <a
-                      onClick={() => setCurrentCategory(elm)}
-                      className={`menu-link menu-link_us-s ${
-                        currentCategory == elm ? "menu-link_active" : ""
-                      }`}
-                    >
-                      {elm}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            {/* <!-- /.shop-banner__content --> */}
-          </div>
-          {/* <!-- /.shop-banner position-relative --> */}
-        </div>
-        {/* <!-- /.full-width_border --> */}
-      </section>
       <div className="mb-4 pb-lg-3"></div>
       <section className="shop-main container">
         <div className="d-flex justify-content-between mb-4 pb-md-2">
@@ -204,24 +159,11 @@ export default function Shop1() {
                       </svg>
                     </span>
                   </Swiper>
-                  <button
-                    className="pc__atc btn anim_appear-bottom btn position-absolute border-0 text-uppercase fw-medium js-add-cart js-open-aside"
-                    onClick={() => addProductToCart(elm.id)}
-                    title={
-                      isAddedToCartProducts(elm.id)
-                        ? "Already Added"
-                        : "Add to Cart"
-                    }
-                  >
-                    {isAddedToCartProducts(elm.id)
-                      ? "Already Added"
-                      : "Add To Cart"}
-                  </button>
+                
                 </div>
 
                 <div className="pc__info position-relative">
-                  <p className="pc__category">{elm.category}</p>
-                  <h6 className="pc__title">
+                  <h6 className="pc__title w-75">
                     <Link to={`/product1_simple/${elm.id}`}>{elm.title}</Link>
                   </h6>
                   <div className="product-card__price d-flex">
@@ -239,22 +181,6 @@ export default function Shop1() {
                       <span className="money price">${elm.price}</span>
                     )}
                   </div>
-                  {elm.colors && (
-                    <div className="d-flex align-items-center mt-1">
-                      {" "}
-                      <ColorSelection />{" "}
-                    </div>
-                  )}
-                  {elm.reviews && (
-                    <div className="product-card__review d-flex align-items-center">
-                      <div className="reviews-group d-flex">
-                        <Star stars={elm.rating} />
-                      </div>
-                      <span className="reviews-note text-lowercase text-secondary ms-1">
-                        {elm.reviews}
-                      </span>
-                    </div>
-                  )}
 
                   <button
                     className={`pc__btn-wl position-absolute top-0 end-0 bg-transparent border-0 js-add-wishlist ${

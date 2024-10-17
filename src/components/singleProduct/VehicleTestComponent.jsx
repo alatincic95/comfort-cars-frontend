@@ -61,53 +61,7 @@ export default function VehicleTestComponent({ product }) {
              return <PreviewItem key={i} title={key} description={testVehicle[key]}/>
             }
           })}
-          <form onSubmit={(e) => e.preventDefault()}>
-      
-            <div className="product-single__addtocart">
-              <div className="qty-control position-relative">
-                <input
-                  type="number"
-                  name="quantity"
-                  value={isIncludeCard() ? isIncludeCard().quantity : quantity}
-                  min="1"
-                  onChange={(e) =>
-                    setQuantityCartItem(product.id, e.target.value)
-                  }
-                  className="qty-control__number text-center"
-                />
-                <div
-                  onClick={() =>
-                    setQuantityCartItem(
-                      product.id,
-                      isIncludeCard()?.quantity - 1 || quantity - 1
-                    )
-                  }
-                  className="qty-control__reduce"
-                >
-                  -
-                </div>
-                <div
-                  onClick={() =>
-                    setQuantityCartItem(
-                      product.id,
-                      isIncludeCard()?.quantity + 1 || quantity + 1
-                    )
-                  }
-                  className="qty-control__increase"
-                >
-                  +
-                </div>
-              </div>
-              {/* <!-- .qty-control --> */}
-              <button
-                type="submit"
-                className="btn btn-primary btn-addtocart js-open-aside"
-                onClick={() => addToCart()}
-              >
-                {isIncludeCard() ? "Already Added" : "Add to Cart"}
-              </button>
-            </div>
-          </form>
+    
           <div className="product-single__addtolinks">
             <a href="#" className="menu-link menu-link_us-s add-to-wishlist">
               <svg
@@ -119,7 +73,7 @@ export default function VehicleTestComponent({ product }) {
               >
                 <use href="#icon_heart" />
               </svg>
-              <span>Add to Wishlist</span>
+              <span className="my-2">Dodaj u favorite</span>
             </a>
             <ShareComponent title={product.title} />
           </div>
@@ -165,6 +119,50 @@ export default function VehicleTestComponent({ product }) {
      
     </div>
           </div>
+          <form onSubmit={(e) => e.preventDefault()}>
+      
+      <div className="contact-us__form">
+      <form
+        className="needs-validation"
+        onSubmit={(e) => e.preventDefault()}
+      >
+        <div className="form-floating my-4">
+          <input
+            type="text"
+            className="form-control"
+            id="contact_us_name"
+            placeholder="Name *"
+            required
+          />
+          <label htmlFor="contact_us_name">Name *</label>
+        </div>
+        <div className="form-floating my-4">
+          <input
+            type="email"
+            className="form-control"
+            id="contact_us_email"
+            placeholder="Email address *"
+            required
+          />
+          <label htmlFor="contact_us_name">Email address *</label>
+        </div>
+        <div className="my-4">
+          <textarea
+            className="form-control form-control_gray"
+            placeholder="Your Message"
+            cols="30"
+            rows="8"
+            required
+          ></textarea>
+        </div>
+        <div className="my-4">
+          <button type="submit" className="btn btn-primary">
+            Pošalji
+          </button>
+        </div>
+      </form>
+    </div>
+      </form>
           <div
             className="tab-pane fade"
             id="tab-additional-info"
