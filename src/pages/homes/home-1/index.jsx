@@ -26,7 +26,6 @@ export default function HomePage1() {
           <div className="mb-4 pb-4 mb-xl-5 pb-xl-5"></div>
           <Products2 />
           <div className="mt-4">
-          <InstaGram />
           </div>
           <div className="mb-4 pb-4 pb-xl-5 mb-xl-5"></div>
           <div className="bg-white">
