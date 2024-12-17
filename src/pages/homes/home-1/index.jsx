@@ -4,7 +4,6 @@ import Footer1 from "@/components/footers/Footer1";
 import Header1 from "@/components/headers/Header1";
 import Features from "@/components/common/features/Features";
 import Hero from "@/components/homes/home-1/Hero";
-import InstaGram from "@/components/homes/home-1/InstaGram";
 import Products2 from "@/components/homes/home-1/Products2";
 
 import MetaComponent from "@/components/common/MetaComponent";

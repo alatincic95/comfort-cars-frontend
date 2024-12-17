@@ -1,42 +1,15 @@
-import { useState } from "react";
 import Slider4 from "./sliders/Slider4";
 import AdditionalInfo from "./AdditionalInfo";
 import Reviews from "./Reviews";
 import ShareComponent from "../common/ShareComponent";
-import { useContextElement } from "@/context/Context";
 import testVehicle from "../../data/test-data/testVehicle.json"
 import { PreviewItem } from "../test-components/PreviewItem";
 export default function VehicleTestComponent({ product }) {
-  const { cartProducts, setCartProducts } = useContextElement();
-  const [quantity, setQuantity] = useState(1);
 
   console.log("Object.keys(testVehicle)",Object.keys(testVehicle))
 
-  const isIncludeCard = () => {
-    const item = cartProducts.filter((elm) => elm.id == product.id)[0];
-    return item;
-  };
-  const setQuantityCartItem = (id, quantity) => {
-    if (isIncludeCard()) {
-      if (quantity >= 1) {
-        const item = cartProducts.filter((elm) => elm.id == id)[0];
-        const items = [...cartProducts];
-        const itemIndex = items.indexOf(item);
-        item.quantity = quantity;
-        items[itemIndex] = item;
-        setCartProducts(items);
-      }
-    } else {
-      setQuantity(quantity - 1 ? quantity : 1);
-    }
-  };
-  const addToCart = () => {
-    if (!isIncludeCard()) {
-      const item = product;
-      item.quantity = quantity;
-      setCartProducts((pre) => [...pre, item]);
-    }
-  };
+
+
   return (
     <section className="product-single container">
       <div className="row">

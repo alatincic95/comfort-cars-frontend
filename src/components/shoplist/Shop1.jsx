@@ -1,25 +1,19 @@
 import { products51 } from "@/data/products/fashion";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Star from "../common/Star";
-import ColorSelection from "../common/ColorSelection";
 import { Navigation } from "swiper/modules";
 import Pagination1 from "../common/Pagination1";
 import { useEffect, useState } from "react";
-import BreadCumb from "./BreadCumb";
 import { Link } from "react-router-dom";
 import { useContextElement } from "@/context/Context";
-const itemPerRow = [2, 3, 4];
 
-import { openModalShopFilter } from "@/utlis/aside";
 import {
   menuCategories,
   sortingOptions,
 } from "@/data/products/productCategories";
 export default function Shop1() {
   const { toggleWishlist, isAddedtoWishlist } = useContextElement();
-  const [selectedColView, setSelectedColView] = useState(4);
+  const [selectedColView] = useState(4);
 
-  const { addProductToCart, isAddedToCartProducts } = useContextElement();
   const [currentCategory] = useState(menuCategories[0]);
 
   // eslint-disable-next-line no-unused-vars
@@ -39,9 +33,7 @@ export default function Shop1() {
       <div className="mb-4 pb-lg-3"></div>
       <section className="shop-main container">
         <div className="d-flex justify-content-between mb-4 pb-md-2">
-          <div className="breadcrumb mb-0 d-none d-md-block flex-grow-1">
-            <BreadCumb />
-          </div>
+     
 
           <div className="shop-acs d-flex align-items-center justify-content-between justify-content-md-end flex-grow-1">
             <select
@@ -55,52 +47,8 @@ export default function Shop1() {
                 </option>
               ))}
             </select>
-
-            <div className="shop-asc__seprator mx-3 bg-light d-none d-md-block order-md-0"></div>
-
-            <div className="col-size align-items-center order-1 d-none d-lg-flex">
-              <span className="text-uppercase fw-medium me-2">View</span>
-              {itemPerRow.map((elm, i) => (
-                <button
-                  key={i}
-                  onClick={() => setSelectedColView(elm)}
-                  className={`btn-link fw-medium me-2 js-cols-size ${
-                    selectedColView == elm ? "btn-link_active" : ""
-                  } `}
-                >
-                  {elm}
-                </button>
-              ))}
-            </div>
-            {/* <!-- /.col-size --> */}
-
-            <div className="shop-asc__seprator mx-3 bg-light d-none d-lg-block order-md-1"></div>
-
-            <div className="shop-filter d-flex align-items-center order-0 order-md-3">
-              <button
-                className="btn-link btn-link_f d-flex align-items-center ps-0 js-open-aside"
-                onClick={openModalShopFilter}
-              >
-                <svg
-                  className="d-inline-block align-middle me-2"
-                  width="14"
-                  height="10"
-                  viewBox="0 0 14 10"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <use href="#icon_filter" />
-                </svg>
-                <span className="text-uppercase fw-medium d-inline-block align-middle">
-                  Filter
-                </span>
-              </button>
-            </div>
-            {/* <!-- /.col-size d-flex align-items-center ms-auto ms-md-3 --> */}
           </div>
-          {/* <!-- /.shop-acs --> */}
         </div>
-        {/* <!-- /.d-flex justify-content-between --> */}
 
         <div
           className={`products-grid row row-cols-2 row-cols-md-3 row-cols-lg-${selectedColView}`}

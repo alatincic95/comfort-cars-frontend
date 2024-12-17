@@ -8,17 +8,7 @@ export const shopList = [
   },
 ];
 export const shopDetails = [
-  { id: 1, href: "/product2_variable/1", title: "Shop Detail V1" },
-  { id: 2, href: "/product7_v2/1", title: "Shop Detail V2" },
-  { id: 3, href: "/product8_v3/1", title: "Shop Detail V3" },
   { id: 4, href: "/product9_v4/1", title: "Shop Detail V4" },
-  { id: 5, href: "/product10_v5/1", title: "Shop Detail V5" },
-  { id: 6, href: "/product11_v6/1", title: "Shop Detail V6" },
-  { id: 7, href: "/product12_v7/1", title: "Shop Detail V7" },
-  { id: 8, href: "/product13_v8/1", title: "Shop Detail V8" },
-  { id: 9, href: "/product14_v9/1", title: "Shop Detail V9" },
-  { id: 10, href: "/product15_v10/1", title: "Shop Detail V10" },
-  { id: 11, href: "/product16_v11/1", title: "Shop Detail V11" },
 ];
 
 export const additionalShopPageitems = [
