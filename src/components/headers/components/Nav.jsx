@@ -19,7 +19,7 @@ export default function Nav() {
   };
   useEffect(() => {
     function setBoxMenuPosition(menu) {
-      const scrollBarWidth = 17; // You might need to calculate or define this value
+      const scrollBarWidth = 17; 
       const limitR = window.innerWidth - menu.offsetWidth - scrollBarWidth;
       const limitL = 0;
       const menuPaddingLeft = parseInt(

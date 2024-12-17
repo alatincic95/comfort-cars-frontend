@@ -3,21 +3,19 @@ export const slides1 = [
     id: 1,
 
     characterImg: "/assets/images/slideshow-character1.png",
-    characterAlt: "Woman Fashion 1",
-    characterText: "Summer",
-    text1: "New Trend",
-    text2: "Summer Sale Stylish",
-    text3: "Womens",
+    characterAlt: "Comfort Cars",
+    characterText: "Comfort Cars",
+    text1: "Comfort Cars",
+    text2: "Najbolja ponuda vozila",
   },
   {
     id: 2,
 
     characterImg: "/assets/images/slideshow-character2.png",
-    characterAlt: "Woman Fashion 2",
-    characterText: "",
-    text1: "Summer 2020",
-    text3: "Hello New Season",
-    text4: "Limited Time Offer - Up to 60% off & Free Shipping",
+    characterAlt: "Comfort Cars",
+    text1: "Comfort Cars",
+    text3: "Garancija za sva vozila",
+    text4: "Kontaktirajte nas na broj: ",
   },
 ];
 export const slides2 = [

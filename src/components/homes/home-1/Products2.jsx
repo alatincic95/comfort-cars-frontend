@@ -59,7 +59,7 @@ export default function Products2() {
               <div key={i} className="col-6 col-md-4 col-lg-3">
                 <div className="product-card mb-3 mb-md-4 mb-xxl-5">
                   <div className="pc__img-wrapper">
-                    <Link to={`/product1_simple/${elm.id}`}>
+                    <Link to={`/product9_v4/${elm.id}`}>
                       <img
                         loading="lazy"
                         src={elm.imgSrc}
@@ -77,36 +77,14 @@ export default function Products2() {
                         alt="image"
                       />
                     </Link>
-                    <button
-                      className="pc__atc btn anim_appear-bottom btn position-absolute border-0 text-uppercase fw-medium js-add-cart js-open-aside"
-                      onClick={() => addProductToCart(elm.id)}
-                      title={
-                        isAddedToCartProducts(elm.id)
-                          ? "Already Added"
-                          : "Add to Cart"
-                      }
-                    >
-                      {isAddedToCartProducts(elm.id)
-                        ? "Already Added"
-                        : "Add To Cart"}
-                    </button>
                   </div>
 
                   <div className="pc__info position-relative">
-                    <p className="pc__category">{elm.category}</p>
                     <h6 className="pc__title">
                       <Link to={`/product1_simple/${elm.id}`}>{elm.title}</Link>
                     </h6>
                     <div className="product-card__price d-flex">
                       <span className="money price">${elm.price}</span>
-                    </div>
-                    <div className="product-card__review d-flex align-items-center">
-                      <div className="reviews-group d-flex">
-                        <Star stars={elm.rating} />
-                      </div>
-                      <span className="reviews-note text-lowercase text-secondary ms-1">
-                        {elm.reviews}
-                      </span>
                     </div>
 
                     <button
