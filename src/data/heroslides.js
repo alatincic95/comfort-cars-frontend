@@ -2,7 +2,7 @@ export const slides1 = [
   {
     id: 1,
 
-    characterImg: "/assets/images/slideshow-character1.png",
+    characterImg: "https://picsum.photos/800",
     characterAlt: "Comfort Cars",
     characterText: "Comfort Cars",
     text1: "Comfort Cars",
@@ -11,7 +11,7 @@ export const slides1 = [
   {
     id: 2,
 
-    characterImg: "/assets/images/slideshow-character2.png",
+    characterImg: "https://picsum.photos/800",
     characterAlt: "Comfort Cars",
     text1: "Comfort Cars",
     text3: "Garancija za sva vozila",

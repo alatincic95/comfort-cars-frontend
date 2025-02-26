@@ -52,7 +52,7 @@ export default function InsideCollextions() {
           {products7.map((elm, i) => (
             <SwiperSlide key={i} className="swiper-slide product-card">
               <div className="pc__img-wrapper">
-                <Link to={`/product1_simple/${elm.id}`}>
+                <Link to={`/vozilo/${elm.id}`}>
                   <img
                     loading="lazy"
                     src={elm.imgSrc}
@@ -152,7 +152,7 @@ export default function InsideCollextions() {
               <div className="pc__info position-relative">
                 <p className="pc__category">{elm.category}</p>
                 <h6 className="pc__title">
-                  <Link to={`/product1_simple/${elm.id}`}>{elm.title}</Link>
+                  <Link to={`/vozilo/${elm.id}`}>{elm.title}</Link>
                 </h6>
                 <div className="product-card__price d-flex">
                   {elm.oldPrice && (

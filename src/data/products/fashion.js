@@ -2125,7 +2125,7 @@ export const products51 = [
     id: 233,
     category: "Dresses",
     title: "Cropped Faux Leather Jacket",
-    oldPrice: 49,
+    priceOld: 49,
     price: 29,
     imgSrc: "https://picsum.photos/200",
     imgSrc2: "https://picsum.photos/200",
@@ -2133,6 +2133,7 @@ export const products51 = [
     rating: 5,
     filterCategory2: "Women",
     filterCategory: "New Arrivals",
+    isNew: "true",
   },
   {
     id: 234,
@@ -2145,6 +2146,7 @@ export const products51 = [
     discont: 67,
     filterCategory2: "Jackets",
     filterCategory: "Best Seller",
+    isNew: true,
   },
   {
     id: 235,

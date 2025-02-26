@@ -103,7 +103,7 @@ export default function PopulerProducts() {
               {filtered.map((elm, i) => (
                 <SwiperSlide key={i} className="swiper-slide product-card">
                   <div className="pc__img-wrapper">
-                    <Link to={`/product1_simple/${elm.id}`}>
+                    <Link to={`/vozilo/${elm.id}`}>
                       <img
                         loading="lazy"
                         src={elm.imgSrc}
@@ -187,7 +187,7 @@ export default function PopulerProducts() {
                       {elm.category}
                     </p>
                     <h6 className="pc__title text-uppercase fw-medium mb-2">
-                      <Link to={`/product1_simple/${elm.id}`}>{elm.title}</Link>
+                      <Link to={`/vozilo/${elm.id}`}>{elm.title}</Link>
                     </h6>
                     <div className="product-card__price d-flex align-items-center justify-content-center mb-2">
                       <span className="money price fw-medium">

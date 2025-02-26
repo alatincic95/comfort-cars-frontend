@@ -65,7 +65,7 @@ export default function BestSelling() {
               className="swiper-slide product-card product-card_style3"
             >
               <div className="pc__img-wrapper border-radius-0">
-                <Link to={`/product1_simple/${elm.id}`}>
+                <Link to={`/vozilo/${elm.id}`}>
                   <img
                     loading="lazy"
                     src={elm.imgSrc}
@@ -80,7 +80,7 @@ export default function BestSelling() {
               <div className="pc__info position-relative">
                 <p className="pc__category text-uppercase">{elm.category}</p>
                 <h6 className="pc__title mb-2">
-                  <Link to={`/product1_simple/${elm.id}`}>{elm.title}</Link>
+                  <Link to={`/vozilo/${elm.id}`}>{elm.title}</Link>
                 </h6>
                 <div className="product-card__price d-flex align-items-center">
                   {!elm.oldPrice ? (

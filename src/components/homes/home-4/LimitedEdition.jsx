@@ -70,7 +70,7 @@ export default function LimitedEdition() {
                 style={{ backgroundColor: elm.backgroundColor }}
               >
                 <div className="pc__img-wrapper">
-                  <Link to={`/product1_simple/${elm.id}`}>
+                  <Link to={`/vozilo/${elm.id}`}>
                     <img
                       loading="lazy"
                       src={elm.imgSrc}
@@ -146,7 +146,7 @@ export default function LimitedEdition() {
 
                 <div className="pc__info position-relative mx-2 px-3 py-3 mt-0">
                   <h6 className="pc__title">
-                    <Link to={`/product1_simple/${elm.id}`}>{elm.title}</Link>
+                    <Link to={`/vozilo/${elm.id}`}>{elm.title}</Link>
                   </h6>
                   <div className="product-card__price d-flex">
                     <span className="money price">${elm.price}</span>

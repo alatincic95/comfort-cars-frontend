@@ -30,7 +30,7 @@ export default function Style6() {
                 }}
               >
                 <SwiperSlide className="swiper-slide">
-                  <Link to={`/product1_simple/${elm.id}`}>
+                  <Link to={`/vozilo/${elm.id}`}>
                     <img
                       loading="lazy"
                       src={elm.imgSrc}
@@ -42,7 +42,7 @@ export default function Style6() {
                   </Link>
                 </SwiperSlide>
                 <SwiperSlide className="swiper-slide">
-                  <Link to={`/product1_simple/${elm.id}`}>
+                  <Link to={`/vozilo/${elm.id}`}>
                     <img
                       loading="lazy"
                       src={elm.imgSrc2}
@@ -81,7 +81,7 @@ export default function Style6() {
               <div className="position-relative">
                 <p className="pc__category">{elm.category}</p>
                 <h6 className="pc__title">
-                  <Link to={`/product1_simple/${elm.id}`}>{elm.title}</Link>
+                  <Link to={`/vozilo/${elm.id}`}>{elm.title}</Link>
                 </h6>
                 <div className="product-card__price d-flex">
                   <span className="money price">${elm.price}</span>

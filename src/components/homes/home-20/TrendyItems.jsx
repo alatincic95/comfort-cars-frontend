@@ -96,7 +96,7 @@ export default function TrendyItems() {
                   className="swiper-slide product-card hover-overlay"
                 >
                   <div className="pc__img-wrapper border-1 pt-100per">
-                    <Link to={`/product1_simple/${elm.id}`}>
+                    <Link to={`/vozilo/${elm.id}`}>
                       <img
                         loading="lazy"
                         src={elm.imgSrc}
@@ -188,7 +188,7 @@ export default function TrendyItems() {
                       <div className="reviews-group d-flex theme-color"></div>
                     </div>
                     <h6 className="pc__title mb-2">
-                      <Link to={`/product1_simple/${elm.id}`}>{elm.title}</Link>
+                      <Link to={`/vozilo/${elm.id}`}>{elm.title}</Link>
                     </h6>
                     <div className="product-card__price d-flex">
                       <span className="money price theme-color fw-bold font-heading">

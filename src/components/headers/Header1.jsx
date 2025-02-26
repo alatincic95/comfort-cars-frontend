@@ -1,11 +1,6 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Nav from "./components/Nav";
-import { openCart } from "@/utlis/openCart";
-import CartLength from "./components/CartLength";
-
-import User from "./components/User";
-import SearchPopup from "./components/SearchPopup";
 
 export default function Header1() {
   const [scrollDirection, setScrollDirection] = useState("down");
@@ -71,15 +66,6 @@ export default function Header1() {
           {/* <!-- /.navigation --> */}
 
           <div className="header-tools d-flex align-items-center">
-            <SearchPopup />
-
-            {/* <!-- /.header-tools__item hover-container --> */}
-
-            <div className="header-tools__item hover-container">
-              <a className="header-tools__item js-open-aside" href="#">
-                <User />
-              </a>
-            </div>
 
             <Link className="header-tools__item" to="/account_wishlist">
               <svg
@@ -93,24 +79,6 @@ export default function Header1() {
               </svg>
             </Link>
 
-            <a
-              onClick={() => openCart()}
-              className="header-tools__item header-tools__cart js-open-aside"
-            >
-              <svg
-                className="d-block"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <use href="#icon_cart" />
-              </svg>
-              <span className="cart-amount d-block position-absolute js-cart-items-count">
-                <CartLength />
-              </span>
-            </a>
 
             <a
               className="header-tools__item"
@@ -129,11 +97,8 @@ export default function Header1() {
               </svg>
             </a>
           </div>
-          {/* <!-- /.header__tools --> */}
         </div>
-        {/* <!-- /.header-desk header-desk_type_1 --> */}
       </div>
-      {/* <!-- /.container --> */}
     </header>
   );
 }

@@ -77,7 +77,7 @@ export default function HotDeals() {
                   className="swiper-slide product-card product-card_style3"
                 >
                   <div className="pc__img-wrapper">
-                    <Link to={`/product1_simple/${elm.id}`}>
+                    <Link to={`/vozilo/${elm.id}`}>
                       <img
                         loading="lazy"
                         src={elm.imgSrc}
@@ -99,7 +99,7 @@ export default function HotDeals() {
 
                   <div className="pc__info position-relative">
                     <h6 className="pc__title">
-                      <Link to={`/product1_simple/${elm.id}`}>{elm.title}</Link>
+                      <Link to={`/vozilo/${elm.id}`}>{elm.title}</Link>
                     </h6>
                     <div className="product-card__price d-flex align-items-center">
                       <span className="money price-old">${elm.oldPrice}</span>

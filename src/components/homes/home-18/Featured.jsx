@@ -59,7 +59,7 @@ export default function Featured() {
                 <div className="product-card product-card_style9 border rounded-3 mb-3 mb-md-4 bg-white">
                   <div className="position-relative pb-3">
                     <div className="pc__img-wrapper pc__img-wrapper_wide3">
-                      <Link to={`/product1_simple/${elm.id}`}>
+                      <Link to={`/vozilo/${elm.id}`}>
                         <img
                           loading="lazy"
                           src={elm.imgSrc}
@@ -139,7 +139,7 @@ export default function Featured() {
                       {elm.category}
                     </p>
                     <h6 className="pc__title fs-16 mb-2">
-                      <Link to={`/product1_simple/${elm.id}`}>{elm.title}</Link>
+                      <Link to={`/vozilo/${elm.id}`}>{elm.title}</Link>
                     </h6>
                     <div className="product-card__review d-sm-flex align-items-center">
                       <div className="reviews-group d-flex">

@@ -61,7 +61,7 @@ export default function MostPopuler() {
               <div key={i} className="col-6 col-md-4 col-lg-3">
                 <div className="product-card mb-3 mb-md-4 mb-xxl-5">
                   <div className="pc__img-wrapper border-1 pt-100per">
-                    <Link to={`/product1_simple/${elm.id}`}>
+                    <Link to={`/vozilo/${elm.id}`}>
                       <img
                         loading="lazy"
                         src={elm.imgSrc}
@@ -143,7 +143,7 @@ export default function MostPopuler() {
                       </div>
                     </div>
                     <h6 className="pc__title fw-bold text-uppercase fs-18">
-                      <Link to={`/product1_simple/${elm.id}`}>{elm.title}</Link>
+                      <Link to={`/vozilo/${elm.id}`}>{elm.title}</Link>
                     </h6>
                     <div className="product-card__price d-flex">
                       <span className="money price theme-color fw-bold fs-18">

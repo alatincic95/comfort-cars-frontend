@@ -4,11 +4,9 @@ import Reviews from "./Reviews";
 import ShareComponent from "../common/ShareComponent";
 import testVehicle from "../../data/test-data/testVehicle.json"
 import { PreviewItem } from "../test-components/PreviewItem";
+import { CAR_DETAIL_NAME } from "@/constants/constants";
+
 export default function VehicleTestComponent({ product }) {
-
-  console.log("Object.keys(testVehicle)",Object.keys(testVehicle))
-
-
 
   return (
     <section className="product-single container">
@@ -19,7 +17,6 @@ export default function VehicleTestComponent({ product }) {
         <div className="col-lg-5">
           <div className="d-flex justify-content-between mb-4 pb-md-2">
        
-
           </div>
           <h1 className="product-single__name">{product.title}</h1>
           <div className="product-single__rating">
@@ -30,8 +27,10 @@ export default function VehicleTestComponent({ product }) {
             <span className="current-price">${product.price}</span>
           </div>
           {Object.keys(testVehicle).map((key, i) => {
-            if(key !== "opis" && key!== "fotografije"){
-             return <PreviewItem key={i} title={key} description={testVehicle[key]}/>
+            if(key !== "description" && key!== "pictures"){
+          
+              return <PreviewItem key={i} title={CAR_DETAIL_NAME[key]} description={testVehicle[key]}/>
+
             }
           })}
     
@@ -80,7 +79,7 @@ export default function VehicleTestComponent({ product }) {
      
       <p className="content">
       <p className="content">
-  {testVehicle.opis.split('\n').map((line, index) => (
+  {testVehicle.description.split('\n').map((line, index) => (
     <div key={index}>
       {line}
       <br />

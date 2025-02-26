@@ -81,7 +81,7 @@ export default function NewArrival() {
                     <div key={i} className="col-12 col-sm-6 col-md-6 col-xl-4">
                       <div className="product-card">
                         <div className="pc__img-wrapper pt-100per">
-                          <Link to={`/product1_simple/${elm.id}`}>
+                          <Link to={`/vozilo/${elm.id}`}>
                             <img
                               loading="lazy"
                               src={elm.imgSrc}
@@ -109,7 +109,7 @@ export default function NewArrival() {
                         <div className="pc__info position-relative">
                           <p className="pc__category">{elm.category}</p>
                           <h6 className="pc__title fs-15 fw-semi-bold mb-2">
-                            <Link to={`/product1_simple/${elm.id}`}>
+                            <Link to={`/vozilo/${elm.id}`}>
                               {elm.title}
                             </Link>
                           </h6>

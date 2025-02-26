@@ -5,7 +5,7 @@ import Header24 from "@/components/headers/Header24";
 import RelatedSlider from "@/components/singleProduct/RelatedSlider";
 
 
-import { allProducts } from "@/data/products";
+import {  cars } from "@/data/products";
 // e0e0e0;
 import MetaComponent from "@/components/common/MetaComponent";
 import { useParams } from "react-router-dom";
@@ -18,7 +18,7 @@ export default function ProductDetailsPage9() {
   let params = useParams();
   const productId = params.id;
   const product =
-    allProducts.filter((elm) => elm.id == productId)[0] || allProducts[0];
+    cars.filter((elm) => elm.id = productId)[0] || cars[0];
   return (
     <>
       <MetaComponent meta={metadata} />

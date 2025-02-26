@@ -72,7 +72,7 @@ export default function BestSelling() {
                     >
                       {[1, 2, 3].map((elm2, i2) => (
                         <SwiperSlide key={i2} className="swiper-slide">
-                          <Link to={`/product1_simple/${elm.id}`}>
+                          <Link to={`/vozilo/${elm.id}`}>
                             <img
                               loading="lazy"
                               src={elm.imgSrc}
@@ -146,7 +146,7 @@ export default function BestSelling() {
                   <div className="pc__info position-relative">
                     <p className="pc__category">{elm.category}</p>
                     <h6 className="pc__title mb-2">
-                      <Link to={`/product1_simple/${elm.id}`}>{elm.title}</Link>
+                      <Link to={`/vozilo/${elm.id}`}>{elm.title}</Link>
                     </h6>
                     <div className="product-card__price d-flex">
                       <span className="money price">${elm.price}</span>

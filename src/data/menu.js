@@ -8,12 +8,12 @@ export const shopList = [
   },
 ];
 export const shopDetails = [
-  { id: 4, href: "/product9_v4/1", title: "Shop Detail V4" },
+  { id: 4, href: "/vozilo/1", title: "Shop Detail V4" },
 ];
 
 export const additionalShopPageitems = [
   { id: 1, href: "/shop-12", title: "Collection Grid" },
-  { id: 2, href: "/product1_simple/1", title: "Simple Product" },
+  { id: 2, href: "/vozilo/1", title: "Simple Product" },
   { id: 3, href: "/product2_variable/2", title: "Variable Product" },
   { id: 4, href: "/product3_external/2", title: "External Product" },
   { id: 5, href: "/product4_grouped/2", title: "Grouped Product" },
@@ -67,33 +67,8 @@ export const othersMenuItems = [
 
 export const dashboardMenuItems = [
   {
-    id: 1,
-    href: "/account_dashboard",
-    title: "Dashboard",
-  },
-  {
-    id: 2,
-    href: "/account_orders",
-    title: "Orders",
-  },
-  {
-    id: 3,
-    href: "/account_edit_address",
-    title: "Addresses",
-  },
-  {
-    id: 4,
-    href: "/account_edit",
-    title: "Account Details",
-  },
-  {
     id: 5,
     href: "/account_wishlist",
     title: "Wishlist",
-  },
-  {
-    id: 6,
-    href: "/login_register",
-    title: "Logout",
   },
 ];

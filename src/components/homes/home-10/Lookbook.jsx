@@ -54,7 +54,7 @@ export default function Lookbook() {
                   className="example"
                   render={() => (
                     <div className="popover-product">
-                      <Link to={`/product1_simple/${id}`}>
+                      <Link to={`/vozilo/${id}`}>
                         <img
                           loading="lazy"
                           width={330}
@@ -65,7 +65,7 @@ export default function Lookbook() {
                         />
                       </Link>
                       <p className="fw-medium mb-0">
-                        <Link to={`/product1_simple/${id}`}>{title}</Link>
+                        <Link to={`/vozilo/${id}`}>{title}</Link>
                       </p>
                       <p className="mb-0">${price}</p>
                     </div>
@@ -93,7 +93,7 @@ export default function Lookbook() {
                         className="swiper-slide product-card"
                       >
                         <div className="pc__img-wrapper">
-                          <Link to={`/product1_simple/${elm.id}`}>
+                          <Link to={`/vozilo/${elm.id}`}>
                             <img
                               loading="lazy"
                               src={elm.imgSrc}
@@ -123,7 +123,7 @@ export default function Lookbook() {
                             {elm.category}
                           </p>
                           <h6 className="pc__title mb-2">
-                            <Link to={`/product1_simple/${elm.id}`}>
+                            <Link to={`/vozilo/${elm.id}`}>
                               {elm.title}
                             </Link>
                           </h6>

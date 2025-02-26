@@ -39,7 +39,7 @@ export default function AccountWishlist() {
                     >
                       {[elm.imgSrc, elm.imgSrc].map((elm2, i) => (
                         <SwiperSlide key={i} className="swiper-slide">
-                          <Link to={`/product1_simple/${elm.id}`}>
+                          <Link to={`/vozilo/${elm.id}`}>
                             <img
                               loading="lazy"
                               src={elm.imgSrc}

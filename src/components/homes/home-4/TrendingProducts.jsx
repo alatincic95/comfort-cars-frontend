@@ -62,7 +62,7 @@ export default function TrendingProducts() {
               <div key={i} className="col-6 col-md-4 col-lg-3">
                 <div className="product-card mb-3 mb-md-4 mb-xxl-5">
                   <div className="pc__img-wrapper">
-                    <Link to={`/product1_simple/${elm.id}`}>
+                    <Link to={`/vozilo/${elm.id}`}>
                       <img
                         loading="lazy"
                         src={elm.imgSrc}
@@ -152,7 +152,7 @@ export default function TrendingProducts() {
                   <div className="pc__info position-relative">
                     <p className="pc__category">{elm.category}</p>
                     <h6 className="pc__title">
-                      <Link to={`/product1_simple/${elm.id}`}>{elm.title}</Link>
+                      <Link to={`/vozilo/${elm.id}`}>{elm.title}</Link>
                     </h6>
                     <div className="product-card__price d-flex">
                       <span className="money price">${elm.price}</span>

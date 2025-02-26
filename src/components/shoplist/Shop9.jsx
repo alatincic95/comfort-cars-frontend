@@ -71,7 +71,7 @@ export default function Shop9() {
                   <div className="pc__info hover__content text-center top-0 left-0 w-100 d-flex flex-column justify-content-center align-items-center">
                     <p className="pc__category">{elm.category}</p>
                     <h6 className="pc__title">
-                      <Link to={`/product1_simple/${elm.id}`}>{elm.title}</Link>
+                      <Link to={`/vozilo/${elm.id}`}>{elm.title}</Link>
                     </h6>
                     <div className="product-card__price d-flex justify-content-center">
                       {elm.priceOld ? (
@@ -138,7 +138,7 @@ export default function Shop9() {
                       <div className="pc__info hover__content text-center top-0 left-0 w-100 d-flex flex-column justify-content-center align-items-center">
                         <p className="pc__category">{elm.category}</p>
                         <h6 className="pc__title">
-                          <Link to={`/product1_simple/${elm.id}`}>
+                          <Link to={`/vozilo/${elm.id}`}>
                             {elm.title}
                           </Link>
                         </h6>
@@ -207,7 +207,7 @@ export default function Shop9() {
                     <div className="pc__info hover__content text-center top-0 left-0 w-100 d-flex flex-column justify-content-center align-items-center">
                       <p className="pc__category">{elm.category}</p>
                       <h6 className="pc__title">
-                        <Link to={`/product1_simple/${elm.id}`}>
+                        <Link to={`/vozilo/${elm.id}`}>
                           {elm.title}
                         </Link>
                       </h6>
@@ -284,7 +284,7 @@ export default function Shop9() {
                         <div className="pc__info hover__content text-center top-0 left-0 w-100 d-flex flex-column justify-content-center align-items-center">
                           <p className="pc__category">{elm.category}</p>
                           <h6 className="pc__title">
-                            <Link to={`/product1_simple/${elm.id}`}>
+                            <Link to={`/vozilo/${elm.id}`}>
                               {elm.title}
                             </Link>
                           </h6>
@@ -355,7 +355,7 @@ export default function Shop9() {
                       <div className="pc__info hover__content text-center top-0 left-0 w-100 d-flex flex-column justify-content-center align-items-center">
                         <p className="pc__category">{elm.category}</p>
                         <h6 className="pc__title">
-                          <Link to={`/product1_simple/${elm.id}`}>
+                          <Link to={`/vozilo/${elm.id}`}>
                             {elm.title}
                           </Link>
                         </h6>
@@ -425,7 +425,7 @@ export default function Shop9() {
                   <div className="pc__info hover__content text-center top-0 left-0 w-100 d-flex flex-column justify-content-center align-items-center">
                     <p className="pc__category">{elm.category}</p>
                     <h6 className="pc__title">
-                      <Link to={`/product1_simple/${elm.id}`}>{elm.title}</Link>
+                      <Link to={`/vozilo/${elm.id}`}>{elm.title}</Link>
                     </h6>
                     <div className="product-card__price d-flex justify-content-center">
                       {elm.priceOld ? (
@@ -493,7 +493,7 @@ export default function Shop9() {
                   <div className="pc__info hover__content text-center top-0 left-0 w-100 d-flex flex-column justify-content-center align-items-center">
                     <p className="pc__category">{elm.category}</p>
                     <h6 className="pc__title">
-                      <Link to={`/product1_simple/${elm.id}`}>{elm.title}</Link>
+                      <Link to={`/vozilo/${elm.id}`}>{elm.title}</Link>
                     </h6>
                     <div className="product-card__price d-flex justify-content-center">
                       {elm.priceOld ? (

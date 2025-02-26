@@ -95,7 +95,7 @@ export default function StrollerCollection() {
               {products46.map((elm, i) => (
                 <SwiperSlide key={i} className="swiper-slide product-card">
                   <div className="pc__img-wrapper">
-                    <Link to={`/product1_simple/${elm.id}`}>
+                    <Link to={`/vozilo/${elm.id}`}>
                       <img
                         loading="lazy"
                         src={elm.imgSrc}
@@ -178,7 +178,7 @@ export default function StrollerCollection() {
                     <p className="pc__category">{elm.category}</p>
                     <h6 className="pc__title mb-2 fs-15 fw-semi-bold">
                       <a
-                        to={`/product1_simple/${elm.id}`}
+                        to={`/vozilo/${elm.id}`}
                         className="theme-color"
                       >
                         {elm.title}

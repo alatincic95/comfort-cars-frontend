@@ -67,7 +67,7 @@ export default function TopDeals() {
               className="swiper-slide product-card product-card_style8"
             >
               <div className="pc__img-wrapper pc__img-wrapper_wide2">
-                <Link to={`/product1_simple/${elm.id}`}>
+                <Link to={`/vozilo/${elm.id}`}>
                   <img
                     loading="lazy"
                     src={elm.imgSrc}
@@ -83,7 +83,7 @@ export default function TopDeals() {
               <div className="pc__info position-relative">
                 <p className="pc__category">{elm.category}</p>
                 <h6 className="pc__title">
-                  <Link to={`/product1_simple/${elm.id}`}>{elm.title}</Link>
+                  <Link to={`/vozilo/${elm.id}`}>{elm.title}</Link>
                 </h6>
                 <div className="product-card__review d-sm-flex align-items-center">
                   <div className="reviews-group d-flex">

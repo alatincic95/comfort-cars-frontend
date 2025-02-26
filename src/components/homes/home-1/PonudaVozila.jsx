@@ -1,26 +1,16 @@
-import Star from "@/components/common/Star";
 import { Link } from "react-router-dom";
 import { useContextElement } from "@/context/Context";
 const filterCategories = ["All", "New Arrivals", "Best Seller", "Top Rated"];
-import { products51 } from "@/data/products/fashion";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { cars } from "@/data/products";
 
-export default function Products2() {
+export default function PonudaVozila() {
   const { toggleWishlist, isAddedtoWishlist } = useContextElement();
-  const { addProductToCart, isAddedToCartProducts } = useContextElement();
   const [currentCategory, setCurrentCategory] = useState(filterCategories[0]);
   // eslint-disable-next-line no-unused-vars
-  const [filtered, setFiltered] = useState(products51);
-  useEffect(() => {
-    if (currentCategory == "All") {
-      setFiltered(products51);
-    } else {
-      setFiltered([
-        ...products51.filter((elm) => elm.filterCategory == currentCategory),
-      ]);
-    }
-  }, [currentCategory]);
+  const [filtered] = useState(cars);
+
 
   return (
     <section className="products-grid container">
@@ -59,10 +49,10 @@ export default function Products2() {
               <div key={i} className="col-6 col-md-4 col-lg-3">
                 <div className="product-card mb-3 mb-md-4 mb-xxl-5">
                   <div className="pc__img-wrapper">
-                    <Link to={`/product9_v4/${elm.id}`}>
+                    <Link to={`/vozilo/${elm.id}`}>
                       <img
                         loading="lazy"
-                        src={elm.imgSrc}
+                        src={elm.pictures[0].url ?? ""}
                         width="330"
                         height="400"
                         alt={elm.title}
@@ -70,7 +60,7 @@ export default function Products2() {
                       />
                       <img
                         loading="lazy"
-                        src={elm.imgSrc2}
+                        src={elm.pictures[1].url ?? ""}
                         width="330"
                         height="400"
                         className="pc__img pc__img-second"
@@ -81,7 +71,7 @@ export default function Products2() {
 
                   <div className="pc__info position-relative">
                     <h6 className="pc__title">
-                      <Link to={`/product1_simple/${elm.id}`}>{elm.title}</Link>
+                      <Link to={`/vozilo/${elm.id}`}>{elm.title}</Link>
                     </h6>
                     <div className="product-card__price d-flex">
                       <span className="money price">${elm.price}</span>

@@ -10,6 +10,7 @@ import {
   menuCategories,
   sortingOptions,
 } from "@/data/products/productCategories";
+import { cars } from "@/data/products";
 export default function Shop1() {
   const { toggleWishlist, isAddedtoWishlist } = useContextElement();
   const [selectedColView] = useState(4);
@@ -54,7 +55,7 @@ export default function Shop1() {
           className={`products-grid row row-cols-2 row-cols-md-3 row-cols-lg-${selectedColView}`}
           id="products-grid"
         >
-          {products51.map((elm, i) => (
+          {cars.map((elm, i) => (
             <div key={i} className="product-card-wrapper">
               <div className="product-card mb-3 mb-md-4 mb-xxl-5">
                 <div className="pc__img-wrapper">
@@ -67,9 +68,9 @@ export default function Shop1() {
                       nextEl: ".next" + i,
                     }}
                   >
-                    {[elm.imgSrc, elm.imgSrc2].map((elm2, i) => (
+                    {[elm.pictures[0].url, elm.pictures[1].url].map((elm2, i) => (
                       <SwiperSlide key={i} className="swiper-slide">
-                        <Link to={`/product1_simple/${elm.id}`}>
+                        <Link to={`/vozilo/${elm.id}`}>
                           <img
                             loading="lazy"
                             src={elm2}
@@ -112,21 +113,21 @@ export default function Shop1() {
 
                 <div className="pc__info position-relative">
                   <h6 className="pc__title w-75">
-                    <Link to={`/product1_simple/${elm.id}`}>{elm.title}</Link>
+                    <Link to={`/vozilo/${elm.id}`}>{elm.title}</Link>
                   </h6>
                   <div className="product-card__price d-flex">
                     {elm.priceOld ? (
                       <>
                         {" "}
                         <span className="money price price-old">
-                          ${elm.priceOld}
+                          €{elm.priceOld}
                         </span>
                         <span className="money price price-sale">
-                          ${elm.price}
+                          €{elm.price}
                         </span>
                       </>
                     ) : (
-                      <span className="money price">${elm.price}</span>
+                      <span className="money price">€{elm.price}</span>
                     )}
                   </div>
 
@@ -148,20 +149,11 @@ export default function Shop1() {
                     </svg>
                   </button>
                 </div>
-                {elm.discont && (
-                  <div className="pc-labels position-absolute top-0 start-0 w-100 d-flex justify-content-between">
-                    <div className="pc-labels__right ms-auto">
-                      <span className="pc-label pc-label_sale d-block text-white">
-                        -{elm.discont}%
-                      </span>
-                    </div>
-                  </div>
-                )}
                 {elm.isNew && (
                   <div className="pc-labels position-absolute top-0 start-0 w-100 d-flex justify-content-between">
                     <div className="pc-labels__left">
                       <span className="pc-label pc-label_new d-block bg-white">
-                        NEW
+                        NOVO
                       </span>
                     </div>
                   </div>
