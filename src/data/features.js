@@ -2,8 +2,8 @@ export const servicePromotions = [
   {
     id: 1,
     icon: "#icon_shipping",
-    title: "Fast And Free Delivery",
-    content: "Free delivery for all orders over $140",
+    title: "Mogućnost dostave vozila",
+    content: "Ukoliko želite, dostavljamo vozilo na Vašu adresu",
   },
   {
     id: 2,
