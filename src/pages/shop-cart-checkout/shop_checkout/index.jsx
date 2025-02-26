@@ -4,8 +4,8 @@ import Header1 from "@/components/headers/Header1";
 import Checkout from "@/components/shopCartandCheckout/Checkout";
 import ChectoutSteps from "@/components/shopCartandCheckout/ChectoutSteps";
 const metadata = {
-  title: "Shop Checkout || Comfort-Cars eCommerce Reactjs Template",
-  description: "Comfort-Cars eCommerce Reactjs Template",
+  title: "Comfort-Cars",
+  description: "Comfort-Cars",
 };
 
 export default function ShopCheckoutPage() {

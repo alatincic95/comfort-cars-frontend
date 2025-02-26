@@ -8,8 +8,8 @@ import PonudaVozila from "@/components/homes/home-1/PonudaVozila";
 
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
-  title: "Home 1 || Comfort-Cars eCommerce Reactjs Template",
-  description: "Comfort-Cars eCommerce Reactjs Template",
+  title: "Comfort-Cars",
+  description: "Comfort-Cars",
 };
 export default function HomePage1() {
   return (

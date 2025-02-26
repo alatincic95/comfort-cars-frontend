@@ -6,8 +6,8 @@ import EditAddress from "@/components/otherPages/EditAddress";
 
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
-  title: "Dashboard Edit Address || Comfort-Cars eCommerce Reactjs Template",
-  description: "Comfort-Cars eCommerce Reactjs Template",
+  title: "Comfort-Cars",
+  description: "Comfort-Cars",
 };
 export default function AccountEditAddressPage() {
   return (

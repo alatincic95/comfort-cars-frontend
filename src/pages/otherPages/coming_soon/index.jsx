@@ -5,8 +5,8 @@ import CommingSoon from "@/components/otherPages/CommingSoon";
 
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
-  title: "Comming Soon || Comfort-Cars eCommerce Reactjs Template",
-  description: "Comfort-Cars eCommerce Reactjs Template",
+  title: "Comfort-Cars",
+  description: "Comfort-Cars",
 };
 export default function CommingSoonPage() {
   return (

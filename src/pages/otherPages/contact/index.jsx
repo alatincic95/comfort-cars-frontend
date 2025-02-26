@@ -4,10 +4,9 @@ import Contact from "@/components/otherPages/Contact/Contact";
 import MetaComponent from "@/components/common/MetaComponent";
 
 const metadata = {
-  title: "Contact || Comfort-Cars eCommerce Reactjs Template",
-  description: "Comfort-Cars eCommerce Reactjs Template",
+  title: "Comfort-Cars",
+  description: "Comfort-Cars",
 };
-
 export default function ContactPage() {
   return (
     <>

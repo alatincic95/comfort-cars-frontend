@@ -5,8 +5,8 @@ import LoginRegister from "@/components/otherPages/LoginRegister";
 
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
-  title: "Login Register || Comfort-Cars eCommerce Reactjs Template",
-  description: "Comfort-Cars eCommerce Reactjs Template",
+  title: "Comfort-Cars",
+  description: "Comfort-Cars",
 };
 export default function LoginPage() {
   return (

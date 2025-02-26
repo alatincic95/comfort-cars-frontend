@@ -5,8 +5,8 @@ import Shop1 from "@/components/shoplist/Shop1";
 
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
-  title: "Shop 1 || Comfort-Cars eCommerce Reactjs Template",
-  description: "Comfort-Cars eCommerce Reactjs Template",
+  title: "Comfort-Cars",
+  description: "Comfort-Cars",
 };
 export default function ShopPage1() {
   return (

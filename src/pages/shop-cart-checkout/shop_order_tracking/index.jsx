@@ -3,8 +3,8 @@ import Footer1 from "@/components/footers/Footer1";
 import Header1 from "@/components/headers/Header1";
 import OrderTrack from "@/components/shopCartandCheckout/OrderTrack";
 const metadata = {
-  title: "Shop Order Tracking || Comfort-Cars eCommerce Reactjs Template",
-  description: "Comfort-Cars eCommerce Reactjs Template",
+  title: "Comfort-Cars",
+  description: "Comfort-Cars",
 };
 export default function ShopOrderTrackingPage() {
   return (

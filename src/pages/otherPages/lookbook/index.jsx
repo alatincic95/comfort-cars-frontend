@@ -5,8 +5,8 @@ import Lookbook from "@/components/otherPages/Lookbook";
 
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
-  title: "Lookbook || Comfort-Cars eCommerce Reactjs Template",
-  description: "Comfort-Cars eCommerce Reactjs Template",
+  title: "Comfort-Cars",
+  description: "Comfort-Cars",
 };
 export default function LookbookPage() {
   return (

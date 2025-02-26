@@ -5,8 +5,8 @@ import Faq from "@/components/otherPages/Faq";
 
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
-  title: "Faq || Comfort-Cars eCommerce Reactjs Template",
-  description: "Comfort-Cars eCommerce Reactjs Template",
+  title: "Comfort-Cars",
+  description: "Comfort-Cars",
 };
 export default function FaqPage() {
   return (

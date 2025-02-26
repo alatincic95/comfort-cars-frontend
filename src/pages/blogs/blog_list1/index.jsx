@@ -6,8 +6,8 @@ import Header1 from "@/components/headers/Header1";
 
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
-  title: "Blog 1 || Comfort-Cars eCommerce Reactjs Template",
-  description: "Comfort-Cars eCommerce Reactjs Template",
+  title: "Comfort-Cars",
+  description: "Comfort-Cars",
 };
 export default function BlogPage1() {
   return (

@@ -6,8 +6,8 @@ import Services from "@/components/otherPages/about/Services";
 
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
-  title: "About || Comfort-Cars eCommerce Reactjs Template",
-  description: "Comfort-Cars eCommerce Reactjs Template",
+  title: "Comfort-Cars",
+  description: "Comfort-Cars",
 };
 export default function AboutPage() {
   return (
