@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
 
 import {
-  currencyOptions,
   footerLinks1,
   footerLinks2,
   footerLinks3,
-  languageOptions,
   socialLinks,
 } from "@/data/footer";
 
