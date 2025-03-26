@@ -115,13 +115,6 @@ export default function Hero() {
           Follow Us
         </span>
       </div>
-      {/* <!-- /.slideshow-social-follow --> */}
-      <a
-        href="#section-collections-grid_masonry"
-        className="slideshow-scroll d-none d-xxl-block position-absolute end-0 bottom-0 text_dash text-uppercase fw-medium"
-      >
-        Scroll
-      </a>
     </Swiper>
   );
 }

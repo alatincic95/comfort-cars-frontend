@@ -36,7 +36,7 @@
 }
 
 .footer__social-link {
-  padding: .5rem $footer-social-link-padding-x;
+  padding: 0.5rem $footer-social-link-padding-x;
   color: $footer-social-link-color;
 
   .svg-icon {
@@ -115,7 +115,7 @@
     }
 
     .menu-link {
-      color: $footer-type-2-dark-menu-link-color
+      color: $footer-type-2-dark-menu-link-color;
     }
 
     .form-select {
@@ -171,7 +171,7 @@
     }
 
     .menu-link {
-      color: $footer-type-2-dark-menu-link-color
+      color: $footer-type-2-dark-menu-link-color;
     }
 
     .form-select {
@@ -218,7 +218,7 @@
   padding: 0.875rem;
   line-height: 1.4;
   gap: 1.5rem;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 
   .app-download-text {
     display: flex;
@@ -244,19 +244,5 @@
     background-color: transparent;
     padding: 0;
     gap: 1rem;
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  .footer-store-info {
-    width: 24%;
-  }
-
-  .footer-menu {
-    width: 17%;
-  }
-
-  .footer-newsletter {
-    width: 25%;
   }
 }
