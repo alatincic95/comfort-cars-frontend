@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade, Pagination } from "swiper/modules";
-import { slides1 } from "@/data/heroslides";
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { EffectFade, Pagination } from 'swiper/modules'
+import { slides1 } from '@/data/heroslides'
 
-import { socialLinks } from "@/data/socials";
+import { socialLinks } from '@/data/socials'
 export default function Hero() {
   const swiperOptions = {
     autoplay: {
@@ -12,31 +12,31 @@ export default function Hero() {
     },
     slidesPerView: 1,
     modules: [Pagination, EffectFade],
-    effect: "fade",
+    effect: 'fade',
     loop: true,
     pagination: {
-      el: ".slideshow-pagination",
-      type: "bullets",
+      el: '.slideshow-pagination',
+      type: 'bullets',
       clickable: true,
     },
-  };
+  }
   return (
     <Swiper
-      style={{ maxWidth: "100%", overflow: "hidden" }}
+      style={{ maxWidth: '100%', overflow: 'hidden' }}
       className="swiper-container js-swiper-slider slideshow full-width_padding swiper-container-fade swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events"
       {...swiperOptions}
     >
-      {" "}
+      {' '}
       {slides1.map((elm, i) => (
         <SwiperSlide
           key={i}
           className="swiper-slide full-width_border border-1"
-          style={{ borderColor: "#f5e6e0" }}
+          style={{ borderColor: '#f5e6e0' }}
         >
           <div className="overflow-hidden position-relative h-100">
             <div
               className="slideshow-bg"
-              style={{ backgroundColor: "#f5e6e0" }}
+              style={{ backgroundColor: '#f5e6e0' }}
             >
               <img
                 loading="lazy"
@@ -48,14 +48,7 @@ export default function Hero() {
               />
             </div>
             {/* <!-- <p className="slideshow_markup font-special text-uppercase position-absolute end-0 bottom-0">Summer</p> --> */}
-            <div className="slideshow-character position-absolute bottom-0 pos_right-center">
-            
-              <div className="character_markup">
-                <p className="text-uppercase font-sofia fw-bold animate animate_fade animate_rtl animate_delay-10">
-                  {elm.characterText}
-                </p>
-              </div>
-            </div>
+            <div className="slideshow-character position-absolute bottom-0 pos_right-center"></div>
             <div className="slideshow-text container position-absolute start-50 top-50 translate-middle">
               <h6 className="text_dash text-uppercase text-red fs-base fw-medium animate animate_fade animate_btt animate_delay-3">
                 {elm.text1}
@@ -68,14 +61,14 @@ export default function Hero() {
                   {elm.text3}
                 </h2>
               ) : (
-                ""
+                ''
               )}
               {elm.text4 ? (
                 <h6 className="text-uppercase mb-5 animate animate_fade animate_btt animate_delay-3">
                   {elm.text4}
                 </h6>
               ) : (
-                ""
+                ''
               )}
               <Link
                 to="/shop-1"
@@ -116,5 +109,5 @@ export default function Hero() {
         </span>
       </div>
     </Swiper>
-  );
+  )
 }

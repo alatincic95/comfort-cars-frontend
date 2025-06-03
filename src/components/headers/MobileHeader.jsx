@@ -1,50 +1,50 @@
-import { currencyOptions, languageOptions } from "@/data/footer";
+import { currencyOptions, languageOptions } from '@/data/footer'
 
-import { socialLinks } from "@/data/socials";
+import { socialLinks } from '@/data/socials'
 
-import { useEffect, useState } from "react";
-import CartLength from "./components/CartLength";
-import { openCart } from "@/utlis/openCart";
-import MobileNav from "./components/MobileNav";
+import { useEffect, useState } from 'react'
+import CartLength from './components/CartLength'
+import { openCart } from '@/utlis/openCart'
+import MobileNav from './components/MobileNav'
 
 export default function MobileHeader() {
-  const [scrollDirection, setScrollDirection] = useState("down");
+  const [scrollDirection, setScrollDirection] = useState('down')
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
+      const currentScrollY = window.scrollY
 
       if (currentScrollY > 250) {
         if (currentScrollY > lastScrollY.current) {
           // Scrolling down
-          setScrollDirection("down");
+          setScrollDirection('down')
         } else {
           // Scrolling up
-          setScrollDirection("up");
+          setScrollDirection('up')
         }
       } else {
         // Below 250px
-        setScrollDirection("down");
+        setScrollDirection('down')
       }
 
-      lastScrollY.current = currentScrollY;
-    };
+      lastScrollY.current = currentScrollY
+    }
 
-    const lastScrollY = { current: window.scrollY };
+    const lastScrollY = { current: window.scrollY }
 
     // Add scroll event listener
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll)
 
     // Cleanup: remove event listener when component unmounts
     return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   return (
     <div
       className={`header-mobile header_sticky ${
-        scrollDirection == "up" ? "header_sticky-active" : "position-absolute"
+        scrollDirection == 'up' ? 'header_sticky-active' : 'position-absolute'
       } `}
     >
       <div className="container d-flex align-items-center h-100">
@@ -101,34 +101,6 @@ export default function MobileHeader() {
             onSubmit={(e) => e.preventDefault()}
             className="search-field position-relative mt-4 mb-3"
           >
-            <div className="position-relative">
-              <input
-                className="search-field__input w-100 border rounded-1"
-                type="text"
-                name="search-keyword"
-                placeholder="Search products"
-              />
-              <button
-                className="btn-icon search-popup__submit pb-0 me-2"
-                type="submit"
-              >
-                <svg
-                  className="d-block"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <use href="#icon_search" />
-                </svg>
-              </button>
-              <button
-                className="btn-icon btn-close-lg search-popup__reset pb-0 me-2"
-                type="reset"
-              ></button>
-            </div>
-
             <div className="position-absolute start-0 top-100 m-0 w-100">
               <div className="search-result"></div>
             </div>
@@ -149,67 +121,12 @@ export default function MobileHeader() {
         {/* <!-- /.container --> */}
 
         <div className="border-top mt-auto pb-2">
-          <div className="customer-links container mt-4 mb-2 pb-1">
-            <svg
-              className="d-inline-block align-middle"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <use href="#icon_user" />
-            </svg>
-            <span className="d-inline-block ms-2 text-uppercase align-middle fw-medium">
-              My Account
-            </span>
-          </div>
-
-          <div className="container d-flex align-items-center">
-            <label className="me-2 text-secondary">Language</label>
-            <select
-              className="form-select form-select-sm bg-transparent border-0"
-              aria-label="Default select example"
-              name="store-language"
-            >
-              {languageOptions.map((option, index) => (
-                <option
-                  key={index}
-                  className="footer-select__option"
-                  value={option.value}
-                >
-                  {option.text}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          <div className="container d-flex align-items-center">
-            <label className="me-2 text-secondary">Currency</label>
-            <select
-              className="form-select form-select-sm bg-transparent border-0"
-              aria-label="Default select example"
-              name="store-language"
-              defaultValue={"fghgjhgj"}
-            >
-              {currencyOptions.map((option, index) => (
-                <option
-                  key={index}
-                  className="footer-select__option"
-                  value={option.value}
-                >
-                  {option.text}
-                </option>
-              ))}
-            </select>
-          </div>
-
           <ul className="container social-links list-unstyled d-flex flex-wrap mb-0">
             {socialLinks.map((link, index) => (
               <li key={index}>
                 <a
                   href={link.href}
-                  className="footer__social-link d-block color-white"
+                  className="footer__social-link d-block color-back"
                 >
                   <svg
                     className={link.className}
@@ -228,5 +145,5 @@ export default function MobileHeader() {
       </nav>
       {/* <!-- /.navigation --> */}
     </div>
-  );
+  )
 }

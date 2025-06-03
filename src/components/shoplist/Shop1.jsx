@@ -1,41 +1,40 @@
-import { products51 } from "@/data/products/fashion";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
-import Pagination1 from "../common/Pagination1";
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import { useContextElement } from "@/context/Context";
+import { products51 } from '@/data/products/fashion'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation } from 'swiper/modules'
+import Pagination1 from '../common/Pagination1'
+import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
+import { useContextElement } from '@/context/Context'
 
 import {
   menuCategories,
   sortingOptions,
-} from "@/data/products/productCategories";
-import { cars } from "@/data/products";
+} from '@/data/products/productCategories'
+import { cars } from '@/data/products'
+import CarBrandModelSelector from './filters/CarMakeDropdown'
 export default function Shop1() {
-  const { toggleWishlist, isAddedtoWishlist } = useContextElement();
-  const [selectedColView] = useState(4);
+  const { toggleWishlist, isAddedtoWishlist } = useContextElement()
+  const [selectedColView] = useState(4)
 
-  const [currentCategory] = useState(menuCategories[0]);
+  const [currentCategory] = useState(menuCategories[0])
 
   // eslint-disable-next-line no-unused-vars
-  const [filtered, setFiltered] = useState(products51);
+  const [filtered, setFiltered] = useState(products51)
   useEffect(() => {
-    if (currentCategory == "All") {
-      setFiltered(products51);
+    if (currentCategory == 'All') {
+      setFiltered(products51)
     } else {
       setFiltered(
         products51.filter((elm) => elm.filterCategory2 == currentCategory)
-      );
+      )
     }
-  }, [currentCategory]);
+  }, [currentCategory])
 
   return (
     <>
       <div className="mb-4 pb-lg-3"></div>
       <section className="shop-main container">
         <div className="d-flex justify-content-between mb-4 pb-md-2">
-     
-
           <div className="shop-acs d-flex align-items-center justify-content-between justify-content-md-end flex-grow-1">
             <select
               className="shop-acs__select form-select w-auto border-0 py-0 order-1 order-md-0"
@@ -50,6 +49,7 @@ export default function Shop1() {
             </select>
           </div>
         </div>
+        <CarBrandModelSelector />
 
         <div
           className={`products-grid row row-cols-2 row-cols-md-3 row-cols-lg-${selectedColView}`}
@@ -64,27 +64,29 @@ export default function Shop1() {
                     slidesPerView={1}
                     modules={[Navigation]}
                     navigation={{
-                      prevEl: ".prev" + i,
-                      nextEl: ".next" + i,
+                      prevEl: '.prev' + i,
+                      nextEl: '.next' + i,
                     }}
                   >
-                    {[elm.pictures[0].url, elm.pictures[1].url].map((elm2, i) => (
-                      <SwiperSlide key={i} className="swiper-slide">
-                        <Link to={`/vozilo/${elm.id}`}>
-                          <img
-                            loading="lazy"
-                            src={elm2}
-                            width="330"
-                            height="400"
-                            alt="Cropped Faux leather Jacket"
-                            className="pc__img"
-                          />
-                        </Link>
-                      </SwiperSlide>
-                    ))}
+                    {[elm.pictures[0].url, elm.pictures[1].url].map(
+                      (elm2, i) => (
+                        <SwiperSlide key={i} className="swiper-slide">
+                          <Link to={`/vozilo/${elm.id}`}>
+                            <img
+                              loading="lazy"
+                              src={elm2}
+                              width="330"
+                              height="400"
+                              alt="Cropped Faux leather Jacket"
+                              className="pc__img"
+                            />
+                          </Link>
+                        </SwiperSlide>
+                      )
+                    )}
 
                     <span
-                      className={`cursor-pointer pc__img-prev ${"prev" + i} `}
+                      className={`cursor-pointer pc__img-prev ${'prev' + i} `}
                     >
                       <svg
                         width="7"
@@ -96,7 +98,7 @@ export default function Shop1() {
                       </svg>
                     </span>
                     <span
-                      className={`cursor-pointer pc__img-next ${"next" + i} `}
+                      className={`cursor-pointer pc__img-next ${'next' + i} `}
                     >
                       <svg
                         width="7"
@@ -108,7 +110,6 @@ export default function Shop1() {
                       </svg>
                     </span>
                   </Swiper>
-                
                 </div>
 
                 <div className="pc__info position-relative">
@@ -118,7 +119,7 @@ export default function Shop1() {
                   <div className="product-card__price d-flex">
                     {elm.priceOld ? (
                       <>
-                        {" "}
+                        {' '}
                         <span className="money price price-old">
                           €{elm.priceOld}
                         </span>
@@ -133,7 +134,7 @@ export default function Shop1() {
 
                   <button
                     className={`pc__btn-wl position-absolute top-0 end-0 bg-transparent border-0 js-add-wishlist ${
-                      isAddedtoWishlist(elm.id) ? "active" : ""
+                      isAddedtoWishlist(elm.id) ? 'active' : ''
                     }`}
                     onClick={() => toggleWishlist(elm.id)}
                     title="Add To Wishlist"
@@ -174,5 +175,5 @@ export default function Shop1() {
         </div>
       </section>
     </>
-  );
+  )
 }

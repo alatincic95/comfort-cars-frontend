@@ -1,79 +1,80 @@
 /* eslint-disable react/prop-types */
-import { allProducts } from "@/data/products";
-import React, { useEffect } from "react";
-import { useContext, useState } from "react";
-const dataContext = React.createContext();
+import { allProducts } from '@/data/products'
+import React, { useEffect } from 'react'
+import { useContext, useState } from 'react'
+const dataContext = React.createContext()
 // eslint-disable-next-line react-refresh/only-export-components
 export const useContextElement = () => {
-  return useContext(dataContext);
-};
+  return useContext(dataContext)
+}
 
 export default function Context({ children }) {
-  const [cartProducts, setCartProducts] = useState([]);
-  const [wishList, setWishList] = useState([]);
-  const [quickViewItem, setQuickViewItem] = useState(allProducts[0]);
-  const [totalPrice, setTotalPrice] = useState(0);
+  const [cartProducts, setCartProducts] = useState([])
+  const [wishList, setWishList] = useState([])
+  const [quickViewItem, setQuickViewItem] = useState(allProducts[0])
+  const [totalPrice, setTotalPrice] = useState(0)
   useEffect(() => {
     const subtotal = cartProducts.reduce((accumulator, product) => {
-      return accumulator + product.quantity * product.price;
-    }, 0);
-    setTotalPrice(subtotal);
-  }, [cartProducts]);
+      return accumulator + product.quantity * product.price
+    }, 0)
+    setTotalPrice(subtotal)
+  }, [cartProducts])
 
   const addProductToCart = (id) => {
     if (!cartProducts.filter((elm) => elm.id == id)[0]) {
       const item = {
         ...allProducts.filter((elm) => elm.id == id)[0],
         quantity: 1,
-      };
-      setCartProducts((pre) => [...pre, item]);
+      }
+      setCartProducts((pre) => [...pre, item])
 
       document
-        .getElementById("cartDrawerOverlay")
-        .classList.add("page-overlay_visible");
-      document.getElementById("cartDrawer").classList.add("aside_visible");
+        .getElementById('cartDrawerOverlay')
+        .classList.add('page-overlay_visible')
+      document.getElementById('cartDrawer').classList.add('aside_visible')
     }
-  };
+  }
   const isAddedToCartProducts = (id) => {
     if (cartProducts.filter((elm) => elm.id == id)[0]) {
-      return true;
+      return true
     }
-    return false;
-  };
+    return false
+  }
 
   const toggleWishlist = (id) => {
+    console.log('OKINUT')
     if (wishList.includes(id)) {
-      setWishList((pre) => [...pre.filter((elm) => elm != id)]);
+      setWishList((pre) => [...pre.filter((elm) => elm != id)])
     } else {
-      setWishList((pre) => [...pre, id]);
+      setWishList((pre) => [...pre, id])
     }
-  };
+  }
   const isAddedtoWishlist = (id) => {
     if (wishList.includes(id)) {
-      return true;
+      return true
     }
-    return false;
-  };
+    return false
+  }
   useEffect(() => {
-    const items = JSON.parse(localStorage.getItem("cartList"));
+    const items = JSON.parse(localStorage.getItem('cartList'))
     if (items?.length) {
-      setCartProducts(items);
+      setCartProducts(items)
     }
-  }, []);
+  }, [])
 
   useEffect(() => {
-    localStorage.setItem("cartList", JSON.stringify(cartProducts));
-  }, [cartProducts]);
+    localStorage.setItem('cartList', JSON.stringify(cartProducts))
+  }, [cartProducts])
   useEffect(() => {
-    const items = JSON.parse(localStorage.getItem("wishlist"));
+    const items = JSON.parse(localStorage.getItem('wishlist'))
     if (items?.length) {
-      setWishList(items);
+      setWishList(items)
     }
-  }, []);
+  }, [])
 
   useEffect(() => {
-    localStorage.setItem("wishlist", JSON.stringify(wishList));
-  }, [wishList]);
+    localStorage.setItem('wishlist', JSON.stringify(wishList))
+  }, [wishList])
 
   const contextElement = {
     cartProducts,
@@ -86,10 +87,10 @@ export default function Context({ children }) {
     quickViewItem,
     wishList,
     setQuickViewItem,
-  };
+  }
   return (
     <dataContext.Provider value={contextElement}>
       {children}
     </dataContext.Provider>
-  );
+  )
 }
