@@ -1,10 +1,6 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
-import {
-  footerLinks1,
-  footerLinks2,
-  socialLinks,
-} from "@/data/footer";
+import { footerLinks1, footerLinks2, socialLinks } from '@/data/footer'
 
 export default function Footer1() {
   return (
@@ -24,9 +20,7 @@ export default function Footer1() {
               </Link>
             </div>
             {/* <!-- /.logo --> */}
-            <p className="footer-address">
-              Kaštel Sućurac
-            </p>
+            <p className="footer-address">Kaštel Sućurac</p>
 
             <p className="m-0">
               <strong className="fw-medium">sale@comfort-cars.com</strong>
@@ -46,7 +40,7 @@ export default function Footer1() {
                       viewBox={link.viewBox}
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      {typeof link.icon === "string" ? (
+                      {typeof link.icon === 'string' ? (
                         <use href={link.icon} />
                       ) : (
                         link.icon
@@ -60,7 +54,7 @@ export default function Footer1() {
           {/* <!-- /.footer-column --> */}
 
           <div className="footer-column footer-menu mb-4 mb-lg-0">
-            <h5 className="sub-menu__title text-uppercase">Company</h5>
+            <h5 className="sub-menu__title text-uppercase">Comfort Cars</h5>
             <ul className="sub-menu__list list-unstyled">
               {footerLinks1.map((elm, i) => (
                 <li key={i} className="sub-menu__item">
@@ -84,7 +78,6 @@ export default function Footer1() {
               ))}
             </ul>
           </div>
-     
         </div>
       </div>
 
@@ -93,16 +86,12 @@ export default function Footer1() {
           <span className="footer-copyright me-auto">
             ©{new Date().getFullYear()} Comfort-Cars
           </span>
-          <div className="footer-settings d-block d-md-flex align-items-center">
-  
-
-        
-          </div>
+          <div className="footer-settings d-block d-md-flex align-items-center"></div>
           {/* <!-- /.footer-settings --> */}
         </div>
         {/* <!-- /.d-flex --> */}
       </div>
       {/* <!-- /.footer-bottom container --> */}
     </footer>
-  );
+  )
 }

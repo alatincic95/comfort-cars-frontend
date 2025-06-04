@@ -1,28 +1,26 @@
-import { useContextElement } from "@/context/Context";
-import { products51 } from "@/data/products/fashion";
-import { Link } from "react-router-dom";
-import { Navigation, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { useContextElement } from '@/context/Context'
+import { cars } from '@/data/products'
+import { Link } from 'react-router-dom'
+import { Navigation, Pagination } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 export default function RelatedSlider() {
-  const { toggleWishlist, isAddedtoWishlist } = useContextElement();
-  const { setQuickViewItem } = useContextElement();
-  const { addProductToCart, isAddedToCartProducts } = useContextElement();
+  const { toggleWishlist, isAddedtoWishlist } = useContextElement()
   const swiperOptions = {
     autoplay: false,
     slidesPerView: 4,
     slidesPerGroup: 4,
-    effect: "none",
+    effect: 'none',
     loop: true,
     modules: [Pagination, Navigation],
     pagination: {
-      el: "#related_products .products-pagination",
-      type: "bullets",
+      el: '#related_products .products-pagination',
+      type: 'bullets',
       clickable: true,
     },
     navigation: {
-      nextEl: ".ssn11",
-      prevEl: ".ssp11",
+      nextEl: '.ssn11',
+      prevEl: '.ssp11',
     },
     breakpoints: {
       320: {
@@ -41,7 +39,8 @@ export default function RelatedSlider() {
         spaceBetween: 30,
       },
     },
-  };
+  }
+
   return (
     <section className="products-carousel container">
       <h2 className="h3 text-uppercase mb-4 pb-xl-2 mb-xl-4">
@@ -54,13 +53,13 @@ export default function RelatedSlider() {
           className="swiper-container js-swiper-slider"
           data-settings=""
         >
-          {products51.map((elm, i) => (
+          {cars.map((elm, i) => (
             <SwiperSlide key={i} className="swiper-slide product-card">
               <div className="pc__img-wrapper">
                 <Link to={`/vozilo/${elm.id}`}>
                   <img
                     loading="lazy"
-                    src={elm.imgSrc}
+                    src={elm.pictures[0].url}
                     width="330"
                     height="400"
                     alt="Cropped Faux leather Jacket"
@@ -68,26 +67,13 @@ export default function RelatedSlider() {
                   />
                   <img
                     loading="lazy"
-                    src={elm.imgSrc2}
+                    src={elm.pictures[1].url}
                     width="330"
                     height="400"
                     alt="Cropped Faux leather Jacket"
                     className="pc__img pc__img-second"
                   />
                 </Link>
-                <button
-                  className="pc__atc btn anim_appear-bottom btn position-absolute border-0 text-uppercase fw-medium js-add-cart js-open-aside"
-                  onClick={() => addProductToCart(elm.id)}
-                  title={
-                    isAddedToCartProducts(elm.id)
-                      ? "Already Added"
-                      : "Add to Cart"
-                  }
-                >
-                  {isAddedToCartProducts(elm.id)
-                    ? "Already Added"
-                    : "Add To Cart"}
-                </button>
               </div>
 
               <div className="pc__info position-relative">
@@ -101,7 +87,7 @@ export default function RelatedSlider() {
 
                 <button
                   className={`pc__btn-wl position-absolute top-0 end-0 bg-transparent border-0 js-add-wishlist ${
-                    isAddedtoWishlist(elm.id) ? "active" : ""
+                    isAddedtoWishlist(elm.id) ? 'active' : ''
                   }`}
                   title="Add To Wishlist"
                   onClick={() => toggleWishlist(elm.id)}
@@ -152,5 +138,5 @@ export default function RelatedSlider() {
       </div>
       {/* <!-- /.position-relative --> */}
     </section>
-  );
+  )
 }

@@ -1,70 +1,65 @@
-import {
-  homePages,
-  shopList,
-} from "@/data/menu";
-import { Link, useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { homePages, shopList } from '@/data/menu'
+import { Link, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 
 export default function Nav() {
-  const { pathname } = useLocation();
+  const { pathname } = useLocation()
   const isMenuActive = (menu) => {
-    return menu.split("/")[1] == pathname.split("/")[1];
-  };
+    return menu.split('/')[1] == pathname.split('/')[1]
+  }
   const isActiveParentMenu = (menus) => {
     return menus.some(
-      (menu) => menu.href.split("/")[1] == pathname.split("/")[1]
-    );
-  };
+      (menu) => menu.href.split('/')[1] == pathname.split('/')[1]
+    )
+  }
   useEffect(() => {
     function setBoxMenuPosition(menu) {
-      const scrollBarWidth = 17; 
-      const limitR = window.innerWidth - menu.offsetWidth - scrollBarWidth;
-      const limitL = 0;
+      const scrollBarWidth = 17
+      const limitR = window.innerWidth - menu.offsetWidth - scrollBarWidth
+      const limitL = 0
       const menuPaddingLeft = parseInt(
-        window.getComputedStyle(menu, null).getPropertyValue("padding-left")
-      );
+        window.getComputedStyle(menu, null).getPropertyValue('padding-left')
+      )
       const parentPaddingLeft = parseInt(
         window
           .getComputedStyle(menu.previousElementSibling, null)
-          .getPropertyValue("padding-left")
-      );
+          .getPropertyValue('padding-left')
+      )
       const centerPos =
         menu.previousElementSibling.offsetLeft -
         menuPaddingLeft +
-        parentPaddingLeft;
+        parentPaddingLeft
 
-      let menuPos = centerPos;
+      let menuPos = centerPos
       if (centerPos < limitL) {
-        menuPos = limitL;
+        menuPos = limitL
       } else if (centerPos > limitR) {
-        menuPos = limitR;
+        menuPos = limitR
       }
 
-      menu.style.left = `${menuPos}px`;
+      menu.style.left = `${menuPos}px`
     }
-    document.querySelectorAll(".box-menu").forEach((el) => {
-      setBoxMenuPosition(el);
-    });
-  }, []);
+    document.querySelectorAll('.box-menu').forEach((el) => {
+      setBoxMenuPosition(el)
+    })
+  }, [])
   return (
     <>
       <li className="navigation__item">
-
         <Link
-                    to={homePages[0].href}
-                    className={`navigation__link ${
-                      isMenuActive(homePages[0].href) ? "menu-active" : ""
-                    }`}
-                  >
-                    {homePages[0].title}
-                  </Link>
-        
+          to={homePages[0].href}
+          className={`navigation__link ${
+            isMenuActive(homePages[0].href) ? 'menu-active' : ''
+          }`}
+        >
+          {homePages[0].title}
+        </Link>
       </li>
       <li className="navigation__item">
         <Link
           to="/shop-1"
           className={`navigation__link
-           ${isActiveParentMenu(shopList) ? "menu-active" : ""}
+           ${isActiveParentMenu(shopList) ? 'menu-active' : ''}
           `}
         >
           Ponuda
@@ -116,12 +111,12 @@ export default function Nav() {
           </div>
         </div> */}
       </li>
-  
+
       <li className="navigation__item">
         <Link
           to="/about"
           className={`navigation__link ${
-            pathname == "/about" ? "menu-active" : ""
+            pathname == '/about' ? 'menu-active' : ''
           }`}
         >
           O nama
@@ -131,12 +126,12 @@ export default function Nav() {
         <Link
           to="/contact"
           className={`navigation__link ${
-            pathname == "/contact" ? "menu-active" : ""
+            pathname == '/contact' ? 'menu-active' : ''
           }`}
         >
           Kontakt
         </Link>
       </li>
     </>
-  );
+  )
 }

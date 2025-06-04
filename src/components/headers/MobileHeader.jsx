@@ -1,10 +1,5 @@
-import { currencyOptions, languageOptions } from '@/data/footer'
-
 import { socialLinks } from '@/data/socials'
-
 import { useEffect, useState } from 'react'
-import CartLength from './components/CartLength'
-import { openCart } from '@/utlis/openCart'
 import MobileNav from './components/MobileNav'
 
 export default function MobileHeader() {
@@ -73,25 +68,6 @@ export default function MobileHeader() {
           </a>
         </div>
         {/* <!-- /.logo --> */}
-
-        <a
-          onClick={() => openCart()}
-          className="header-tools__item header-tools__cart js-open-aside"
-        >
-          <svg
-            className="d-block"
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <use href="#icon_cart" />
-          </svg>
-          <span className="cart-amount d-block position-absolute js-cart-items-count">
-            <CartLength />
-          </span>
-        </a>
       </div>
       {/* <!-- /.container --> */}
 

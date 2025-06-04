@@ -34,7 +34,7 @@ export default function Hero() {
           style={{ borderColor: '#f5e6e0' }}
         >
           <div className="overflow-hidden position-relative h-100">
-            <div
+            {/* <div
               className="slideshow-bg"
               style={{ backgroundColor: '#f5e6e0' }}
             >
@@ -46,14 +46,33 @@ export default function Hero() {
                 alt="Pattern"
                 className="slideshow-bg__img object-fit-cover"
               />
+            </div> */}
+            <div
+              className="slideshow-bg"
+              style={{ backgroundColor: '#f5e6e0' }}
+            >
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                width="100%"
+                height="100%"
+                poster={elm.posterImg} // optional, if you have a poster image
+                style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+              >
+                <source src={elm.videoSrc} type="video/mp4" />
+                {elm.characterAlt}
+              </video>
             </div>
+
             {/* <!-- <p className="slideshow_markup font-special text-uppercase position-absolute end-0 bottom-0">Summer</p> --> */}
             <div className="slideshow-character position-absolute bottom-0 pos_right-center"></div>
             <div className="slideshow-text container position-absolute start-50 top-50 translate-middle">
               <h6 className="text_dash text-uppercase text-red fs-base fw-medium animate animate_fade animate_btt animate_delay-3">
                 {elm.text1}
               </h6>
-              <h2 className="text-uppercase h1 fw-normal mb-0 animate animate_fade animate_btt animate_delay-5">
+              <h2 className="text-uppercase h1 fw-bold mb-0 animate animate_fade animate_btt animate_delay-5">
                 {elm.text2}
               </h2>
               {elm.text3 ? (
@@ -86,10 +105,13 @@ export default function Hero() {
       </div>
       {/* <!-- /.container --> */}
       <div className="slideshow-social-follow d-none d-xxl-block position-absolute top-50 start-0 translate-middle-y text-center">
-        <ul className="social-links list-unstyled mb-0 text-secondary">
+        <ul className="social-links list-unstyled mb-0 text-black">
           {socialLinks.map((link, index) => (
             <li key={index}>
-              <a href={link.href} className="footer__social-link d-block">
+              <a
+                href={link.href}
+                className="footer__social-link d-block color-black"
+              >
                 <svg
                   className={link.className}
                   width={link.width}
@@ -104,7 +126,7 @@ export default function Hero() {
           ))}
         </ul>
         {/* <!-- /.social-links list-unstyled mb-0 text-secondary --> */}
-        <span className="slideshow-social-follow__title d-block mt-5 text-uppercase fw-medium text-secondary">
+        <span className="slideshow-social-follow__title d-block mt-5 text-uppercase fw-medium text-black">
           Follow Us
         </span>
       </div>

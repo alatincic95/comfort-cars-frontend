@@ -59,14 +59,25 @@ export const cars = [
     enginePower: '130',
     chassisNumber: 'VF3MCYHZRKS514080',
     pictures: [
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
+      { url: 'https://picsum.photos/200?random=1' },
+      { url: 'https://picsum.photos/200?random=2' },
+      { url: 'https://picsum.photos/200?random=3' },
+      { url: 'https://picsum.photos/200?random=4' },
+      { url: 'https://picsum.photos/200?random=5' },
+      { url: 'https://picsum.photos/200?random=6' },
+      { url: 'https://picsum.photos/200?random=7' },
+      { url: 'https://picsum.photos/200?random=8' },
+      { url: 'https://picsum.photos/200?random=9' },
+      { url: 'https://picsum.photos/200?random=10' },
     ],
-    description: '✅ PEUGEOT 3008 1,5BlueHDI ✅\n...',
+    description: `✅ PEUGEOT 3008 1.5 BlueHDI ✅
+Godina: 2020
+Kilometraža: 20,000 km
+Motor: Benzinski, 130 KS
+Mjenjač: Automatski
+Broj šasije: VF3MCYHZRKS514080
+Stanje: NOVO u ponudi, U DOLASKU
+Odlična oprema, servisna knjiga, moguća zamjena.`,
   },
   {
     id: 2,
@@ -82,14 +93,20 @@ export const cars = [
     enginePower: '150',
     chassisNumber: 'WVGZZZ5NZKM514080',
     pictures: [
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
+      { url: 'https://picsum.photos/200?random=7' },
+      { url: 'https://picsum.photos/200?random=8' },
+      { url: 'https://picsum.photos/200?random=9' },
+      { url: 'https://picsum.photos/200?random=10' },
+      { url: 'https://picsum.photos/200?random=11' },
+      { url: 'https://picsum.photos/200?random=12' },
     ],
-    description: '✅ VOLKSWAGEN TIGUAN 2.0 TDI ✅\n...',
+    description: `✅ VOLKSWAGEN TIGUAN 2.0 TDI ✅
+Godina: 2019
+Kilometraža: 30,000 km
+Motor: Dizelski, 150 KS
+Mjenjač: Manualni
+Broj šasije: WVGZZZ5NZKM514080
+Pouzdan SUV, bogata oprema, uredno održavan.`,
   },
   {
     id: 3,
@@ -105,14 +122,20 @@ export const cars = [
     enginePower: '122',
     chassisNumber: 'JTNBVHEJ0MJ005948',
     pictures: [
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
+      { url: 'https://picsum.photos/200?random=13' },
+      { url: 'https://picsum.photos/200?random=14' },
+      { url: 'https://picsum.photos/200?random=15' },
+      { url: 'https://picsum.photos/200?random=16' },
+      { url: 'https://picsum.photos/200?random=17' },
+      { url: 'https://picsum.photos/200?random=18' },
     ],
-    description: '✅ TOYOTA COROLLA 1.8 HYBRID ✅\n...',
+    description: `✅ TOYOTA COROLLA 1.8 HYBRID ✅
+Godina: 2021
+Kilometraža: 15,000 km
+Motor: Hibridni, 122 KS
+Mjenjač: Automatski
+Broj šasije: JTNBVHEJ0MJ005948
+Ekonomična potrošnja, napredna sigurnost, odličan gradski automobil.`,
   },
   {
     id: 4,
@@ -128,14 +151,20 @@ export const cars = [
     enginePower: '150',
     chassisNumber: 'WBA0E5100L5L81792',
     pictures: [
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
+      { url: 'https://picsum.photos/200?random=19' },
+      { url: 'https://picsum.photos/200?random=20' },
+      { url: 'https://picsum.photos/200?random=21' },
+      { url: 'https://picsum.photos/200?random=22' },
+      { url: 'https://picsum.photos/200?random=23' },
+      { url: 'https://picsum.photos/200?random=24' },
     ],
-    description: '✅ BMW X1 xDrive 18d ✅\n...',
+    description: `✅ BMW X1 xDrive 18d ✅
+Godina: 2020
+Kilometraža: 25,000 km
+Motor: Dizelski, 150 KS
+Mjenjač: Automatski
+Broj šasije: WBA0E5100L5L81792
+xDrive pogon, luksuzna oprema, servisna povijest.`,
   },
   {
     id: 5,
@@ -151,14 +180,20 @@ export const cars = [
     enginePower: '150',
     chassisNumber: 'WA1ZZZF30L1045238',
     pictures: [
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
+      { url: 'https://picsum.photos/200?random=25' },
+      { url: 'https://picsum.photos/200?random=26' },
+      { url: 'https://picsum.photos/200?random=27' },
+      { url: 'https://picsum.photos/200?random=28' },
+      { url: 'https://picsum.photos/200?random=29' },
+      { url: 'https://picsum.photos/200?random=30' },
     ],
-    description: '✅ AUDI Q3 35 TFSI ✅\n...',
+    description: `✅ AUDI Q3 35 TFSI ✅
+Godina: 2021
+Kilometraža: 12,000 km
+Motor: Benzinski, 150 KS
+Mjenjač: Automatski
+Broj šasije: WA1ZZZF30L1045238
+Moderan SUV, vrhunska udobnost, prvi vlasnik.`,
   },
   {
     id: 6,
@@ -174,14 +209,20 @@ export const cars = [
     enginePower: '163',
     chassisNumber: 'WDC1569421J520983',
     pictures: [
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
+      { url: 'https://picsum.photos/200?random=31' },
+      { url: 'https://picsum.photos/200?random=32' },
+      { url: 'https://picsum.photos/200?random=33' },
+      { url: 'https://picsum.photos/200?random=34' },
+      { url: 'https://picsum.photos/200?random=35' },
+      { url: 'https://picsum.photos/200?random=36' },
     ],
-    description: '✅ MERCEDES-BENZ GLA 200 ✅\n...',
+    description: `✅ MERCEDES-BENZ GLA 200 ✅
+Godina: 2021
+Kilometraža: 10,000 km
+Motor: Benzinski, 163 KS
+Mjenjač: Automatski
+Broj šasije: WDC1569421J520983
+Premium crossover, napredni sigurnosni sustavi, odlična očuvanost.`,
   },
   {
     id: 7,
@@ -197,14 +238,20 @@ export const cars = [
     enginePower: '230',
     chassisNumber: 'TMAJ3815LJJ045782',
     pictures: [
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
+      { url: 'https://picsum.photos/200?random=37' },
+      { url: 'https://picsum.photos/200?random=38' },
+      { url: 'https://picsum.photos/200?random=39' },
+      { url: 'https://picsum.photos/200?random=40' },
+      { url: 'https://picsum.photos/200?random=41' },
+      { url: 'https://picsum.photos/200?random=42' },
     ],
-    description: '✅ HYUNDAI TUCSON 1.6 T-GDI HYBRID ✅\n...',
+    description: `✅ HYUNDAI TUCSON 1.6 T-GDI HYBRID ✅
+Godina: 2022
+Kilometraža: 5,000 km
+Motor: Hibridni, 230 KS
+Mjenjač: Automatski
+Broj šasije: TMAJ3815LJJ045782
+Najnoviji model, niska potrošnja, odličan za obitelj.`,
   },
   {
     id: 8,
@@ -220,14 +267,20 @@ export const cars = [
     enginePower: '185',
     chassisNumber: 'KNAP5816BL0123456',
     pictures: [
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
-      { url: 'https://picsum.photos/200' },
+      { url: 'https://picsum.photos/200?random=43' },
+      { url: 'https://picsum.photos/200?random=44' },
+      { url: 'https://picsum.photos/200?random=45' },
+      { url: 'https://picsum.photos/200?random=46' },
+      { url: 'https://picsum.photos/200?random=47' },
+      { url: 'https://picsum.photos/200?random=48' },
     ],
-    description: '✅ KIA SPORTAGE 2.0 CRDi ✅\n...',
+    description: `✅ KIA SPORTAGE 2.0 CRDi ✅
+Godina: 2020
+Kilometraža: 18,000 km
+Motor: Dizelski, 185 KS
+Mjenjač: Automatski
+Broj šasije: KNAP5816BL0123456
+Pouzdan SUV, bogata serijska oprema, servisiran u ovlaštenom servisu.`,
   },
 ]
 

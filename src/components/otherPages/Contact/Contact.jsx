@@ -1,4 +1,4 @@
-import { storesLocations } from "@/data/storeLocations";
+import { storesLocations } from '@/data/storeLocations'
 
 export default function Contact() {
   return (
@@ -35,7 +35,7 @@ export default function Contact() {
                 placeholder="Name *"
                 required
               />
-              <label htmlFor="contact_us_name">Name *</label>
+              <label htmlFor="contact_us_name">Ime i prezime *</label>
             </div>
             <div className="form-floating my-4">
               <input
@@ -45,12 +45,21 @@ export default function Contact() {
                 placeholder="Email address *"
                 required
               />
-              <label htmlFor="contact_us_name">Email address *</label>
+              <label htmlFor="contact_us_name">Email *</label>
+            </div>
+            <div className="form-floating my-4">
+              <input
+                type="text"
+                className="form-control"
+                id="contact_us_phone"
+                placeholder="Broj mobitela"
+              />
+              <label htmlFor="contact_us_name">Broj mobitela</label>
             </div>
             <div className="my-4">
               <textarea
                 className="form-control form-control_gray"
-                placeholder="Your Message"
+                placeholder="Vaša poruka"
                 cols="30"
                 rows="8"
                 required
@@ -65,5 +74,5 @@ export default function Contact() {
         </div>
       </div>
     </section>
-  );
+  )
 }

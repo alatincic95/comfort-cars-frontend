@@ -42,7 +42,6 @@ export default function Context({ children }) {
   }
 
   const toggleWishlist = (id) => {
-    console.log('OKINUT')
     if (wishList.includes(id)) {
       setWishList((pre) => [...pre.filter((elm) => elm != id)])
     } else {

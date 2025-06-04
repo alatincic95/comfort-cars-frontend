@@ -22,7 +22,6 @@ export default function PonudaVozila() {
         >
           <div className="row">
             {filtered.slice(0, 8).map((elm, i) => {
-              console.log('CAR: ', elm)
               return (
                 <div key={i} className="col-6 col-md-4 col-lg-3">
                   <div className="product-card mb-3 mb-md-4 mb-xxl-5">

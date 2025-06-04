@@ -1,23 +1,22 @@
-import Footer1 from "@/components/footers/Footer1";
+import Footer1 from '@/components/footers/Footer1'
 
-import RelatedSlider from "@/components/singleProduct/RelatedSlider";
+import RelatedSlider from '@/components/singleProduct/RelatedSlider'
 
-
-import {  cars } from "@/data/products";
+import { cars } from '@/data/products'
 // e0e0e0;
-import MetaComponent from "@/components/common/MetaComponent";
-import { useParams } from "react-router-dom";
-import VehicleTestComponent from "../../../../components/singleProduct/VehicleTestComponent";
-import Header1 from "@/components/headers/Header1";
+import MetaComponent from '@/components/common/MetaComponent'
+import { useParams } from 'react-router-dom'
+import VehicleTestComponent from '../../../../components/singleProduct/VehicleTestComponent'
+import Header1 from '@/components/headers/Header1'
 const metadata = {
-  title: "Shop Single 9 || Comfort-Cars eCommerce Reactjs Template",
-  description: "Comfort-Cars eCommerce Reactjs Template",
-};
+  title: 'Shop Single 9 || Comfort-Cars eCommerce Reactjs Template',
+  description: 'Comfort-Cars eCommerce Reactjs Template',
+}
 export default function ProductDetailsPage9() {
-  let params = useParams();
-  const productId = params.id;
-  const product =
-    cars.filter((elm) => elm.id = productId)[0] || cars[0];
+  let params = useParams()
+  const productId = params.id
+  const product = cars.find((elm) => elm.id.toString() === productId.toString())
+
   return (
     <>
       <MetaComponent meta={metadata} />
@@ -31,5 +30,5 @@ export default function ProductDetailsPage9() {
       </main>
       <Footer1 />
     </>
-  );
+  )
 }

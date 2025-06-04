@@ -1,63 +1,61 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unknown-property */
-import Svgs from "@/components/common/Svgs";
-import "react-tooltip/dist/react-tooltip.css";
-import "./styles/style.scss";
-import "rc-slider/assets/index.css";
-import "tippy.js/dist/tippy.css";
-import LoginFormPopup from "@/components/common/LoginFormPopup";
+import Svgs from '@/components/common/Svgs'
+import 'react-tooltip/dist/react-tooltip.css'
+import './styles/style.scss'
+import 'rc-slider/assets/index.css'
+import 'tippy.js/dist/tippy.css'
+import LoginFormPopup from '@/components/common/LoginFormPopup'
 
-import ScrollTop from "@/components/common/ScrollTop";
-import Context from "@/context/Context";
-import QuickView from "@/components/modals/QuickView";
-import CartDrawer from "@/components/shopCartandCheckout/CartDrawer";
-import SiteMap from "@/components/modals/SiteMap";
+import ScrollTop from '@/components/common/ScrollTop'
+import Context from '@/context/Context'
+import QuickView from '@/components/modals/QuickView'
 // import NewsLetter from "@/components/modals/NewsLetter";
-import MobileHeader from "@/components/headers/MobileHeader";
-import SizeGuide from "@/components/modals/SizeGuide";
-import Delivery from "@/components/modals/Delivery";
-import CustomerLogin from "@/components/asides/CustomerLogin";
-import ShopFilter from "@/components/asides/ShopFilter";
-import ProductDescription from "@/components/asides/ProductDescription";
-import ProductAdditionalInformation from "@/components/asides/ProductAdditionalInformation";
-import ProductReviews from "@/components/asides/ProductReviews";
-import MobileFooter1 from "@/components/footers/MobileFooter1";
-import { useEffect } from "react";
-import { Route, Routes } from "react-router-dom";
+import MobileHeader from '@/components/headers/MobileHeader'
+import SizeGuide from '@/components/modals/SizeGuide'
+import Delivery from '@/components/modals/Delivery'
+import CustomerLogin from '@/components/asides/CustomerLogin'
+import ShopFilter from '@/components/asides/ShopFilter'
+import ProductDescription from '@/components/asides/ProductDescription'
+import ProductAdditionalInformation from '@/components/asides/ProductAdditionalInformation'
+import ProductReviews from '@/components/asides/ProductReviews'
+import MobileFooter1 from '@/components/footers/MobileFooter1'
+import { useEffect } from 'react'
+import { Route, Routes } from 'react-router-dom'
 
-import HomePage1 from "./pages/homes/home-1";
-import ShopPage1 from "./pages/shoplist/shop-1";
-import ProductDetailsPage9 from "./pages/shopSingle/product9_v4/[id]";
-import ShopCartPage from "./pages/shop-cart-checkout/shop_cart";
-import ShopCheckoutPage from "./pages/shop-cart-checkout/shop_checkout";
-import ShopOrderConplate from "./pages/shop-cart-checkout/shop_order_complete";
-import ShopOrderTrackingPage from "./pages/shop-cart-checkout/shop_order_tracking"
-import AccountPage from "./pages/dashboard/account_dashboard";
-import LoginPage from "./pages/otherPages/login_register";
-import StoreLocationPage from "./pages/otherPages/store_location";
-import LookbookPage from "./pages/otherPages/lookbook";
-import FaqPage from "./pages/otherPages/faq";
-import TermsPage from "./pages/otherPages/terms";
-import NotFound from "./pages/not-found";
-import CommingSoonPage from "./pages/otherPages/coming_soon";
-import AccountOrderPage from "./pages/dashboard/account_orders";
-import AccountEditAddressPage from "./pages/dashboard/account_edit_address";
-import AccountEditPage from "./pages/dashboard/account_edit";
-import AccountWishlistPage from "./pages/dashboard/account_wishlist";
-import ResetPasswordPage from "./pages/otherPages/reset_password";
-import AboutPage from "./pages/otherPages/about";
-import ContactPage from "./pages/otherPages/contact";
-import ScrollTopBehaviour from "./components/common/ScrollTopBehaviour";
+import HomePage1 from './pages/homes/home-1'
+import ShopPage1 from './pages/shoplist/shop-1'
+import ProductDetailsPage9 from './pages/shopSingle/product9_v4/[id]'
+import ShopCartPage from './pages/shop-cart-checkout/shop_cart'
+import ShopCheckoutPage from './pages/shop-cart-checkout/shop_checkout'
+import ShopOrderConplate from './pages/shop-cart-checkout/shop_order_complete'
+import ShopOrderTrackingPage from './pages/shop-cart-checkout/shop_order_tracking'
+import AccountPage from './pages/dashboard/account_dashboard'
+import LoginPage from './pages/otherPages/login_register'
+import StoreLocationPage from './pages/otherPages/store_location'
+import LookbookPage from './pages/otherPages/lookbook'
+import FaqPage from './pages/otherPages/faq'
+import TermsPage from './pages/otherPages/terms'
+import NotFound from './pages/not-found'
+import CommingSoonPage from './pages/otherPages/coming_soon'
+import AccountOrderPage from './pages/dashboard/account_orders'
+import AccountEditAddressPage from './pages/dashboard/account_edit_address'
+import AccountEditPage from './pages/dashboard/account_edit'
+import AccountWishlistPage from './pages/dashboard/account_wishlist'
+import ResetPasswordPage from './pages/otherPages/reset_password'
+import AboutPage from './pages/otherPages/about'
+import ContactPage from './pages/otherPages/contact'
+import ScrollTopBehaviour from './components/common/ScrollTopBehaviour'
 
 function App() {
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    if (typeof window !== 'undefined') {
       // Import the script only on the client side
-      import("bootstrap/dist/js/bootstrap.esm").then(() => {
+      import('bootstrap/dist/js/bootstrap.esm').then(() => {
         // Module is imported, you can access any exported functionality if
-      });
+      })
     }
-  }, []);
+  }, [])
   return (
     <>
       <Svgs />
@@ -67,7 +65,6 @@ function App() {
           <Route path="/">
             <Route index element={<HomePage1 />} />
             <Route path="home-1" element={<HomePage1 />} />
-          
 
             <Route path="shop-1" element={<ShopPage1 />} />
 
@@ -112,8 +109,8 @@ function App() {
         {/* <NewsLetter /> */}
         <SizeGuide />
         <Delivery />
-        <CartDrawer />
-        <SiteMap />
+        {/* <CartDrawer /> */}
+        {/* <SiteMap /> */}
         <CustomerLogin />
         <ShopFilter />
         <ProductDescription />
@@ -124,7 +121,7 @@ function App() {
       <ScrollTop />
       <ScrollTopBehaviour />
     </>
-  );
+  )
 }
 
-export default App;
+export default App
